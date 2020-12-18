@@ -10,10 +10,14 @@
   font-style: normal;
   font-weight: 700;
   src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD-w.ttf) format('truetype');
+
 }
+
 html,
 body {
   height: 100%;
+  margin:0;
+  padding:0;
   
 }
 body {
@@ -495,9 +499,9 @@ hr {
   position: fixed;
   display: inline-block;
   border: 1px solid dimgray;
-  left: 70%;
+  left: 73%;
   /* margin-left: -300px; */
-  margin-top:-305px;
+  margin-top:-405px;
   width: 260px;
   height: 260px;
   border-radius: 500px;
@@ -568,7 +572,7 @@ img {
   left: 50%;
   margin-top: 20px;
   margin-left: 20px;
-  background-image: url('img/over18.png');
+  background-image: url('img/over-18.png');
   /* background-size: 150px;
   width: 300px;
   height: 300px; */
@@ -605,3 +609,184 @@ hr {
 }
 
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  margin:0;
+  padding:0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  list-style: none;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.wrap-up {
+  width:190px;
+  margin:30px auto;
+  cursor:pointer;
+  position:absolute;
+  font-size:16pt;
+  top:-25px;
+  left:85%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: #eee;
+  border-bottom: 1px solid #222;
+  font: 15px/1 'Montserrat', sans-serif;
+}
+
+.main-nav {
+  position:relative;
+  border:1px solid rgba(0, 0, 0 , 0.2);
+  padding:15px;
+  background-color: #2a2a2a;
+  /* background: rgba(0, 0, 0, 0.78); */
+  color: #fefefe;
+}
+
+.main-nav:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.main-nav > span {
+  position:absolute;
+  top: 17px;
+  right:20px;
+  cursor:pointer;
+}
+
+#list-items {
+  display:none;
+  margin-top:-1px;
+  background: rgba(0, 0, 0, 0.78);
+  color: #fefefe;
+}
+
+li{
+  border-bottom:1px solid rgba(0, 0, 0, 0.1);
+}
+
+.thing, .thing:visited {
+  text-decoration:none;
+  padding-left:0;
+  color: #fefefe;
+  padding:15px;
+  display:block;
+  transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+#thing1{
+  border: 1px solid lime;
+  color:lime;
+  text-transform: none !important;
+  letter-spacing: normal;
+  -webkit-text-size-adjust:none!important;
+}
+#thing2{
+  border: 1px solid aqua;
+  color:aqua;
+  text-transform: none !important;
+  letter-spacing: normal;
+  -webkit-text-size-adjust:none!important;
+}
+
+#thing3{
+  border: 1px solid red;
+  color:red;
+  text-transform: none !important;
+  letter-spacing: normal;
+  -webkit-text-size-adjust:none!important;
+}
+
+#thing4{
+  border: 1px solid yellow;
+  color: yellow;
+  text-transform: none !important;
+  letter-spacing: normal;
+  -webkit-text-size-adjust:none!important;
+}
+#thing5{
+  border: 1px solid magenta;
+  color: magenta;
+  text-transform: none !important;
+  letter-spacing: normal;
+  -webkit-text-size-adjust:none!important;
+}
+#thing6, #thing7, #thing8, #thing9, #thing10{
+  /* border: 1px solid magenta; */
+  color: rgba(0, 0, 0, 0.78);
+  border-top:1px solid  rgb(217, 217, 217, .2);
+  text-transform: none !important;
+  letter-spacing: normal;
+  -webkit-text-size-adjust:none!important;
+}
+
+.thing:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+#emphasis{
+  font-size:16pt;
+  font-weight:400;
+}
+#arrow-down{
+  height:20px;
+  width:23px;
+  margin-right:-10px;}
+
+.drop-box{
+  width:180px;
+  height:70px;
+  margin-top:-1px;
+  background: #2a2a2a;
+  color: #fefefe;
+  border:solid lime 2px;
+  opacity: 0.8;
+  border-radius: 5%;;
+}
+#drop-box1{
+  position:absolute;
+  top:76%;
+  left:15%;
+  font-size:15px;
+}
+#drop-box2{
+  position:absolute;
+  top:88%;
+  left:15%;
+  font-size:15px;
+}
+#drop-box3{
+  position:absolute;
+  top:88%;
+  left:27%;
+  font-size:15px;
+}
+#drop-box4{
+  position:absolute;
+  top:88%;
+  left:39%;
+  font-size:15px;
+}
+#drop-box5{
+  position:absolute;
+  top:88%;
+  left:51%;
+  font-size:15px;
+}
+#drop-box6{
+  position:absolute;
+  top:88%;
+  left:63%;
+  font-size:15px;
+}

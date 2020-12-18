@@ -4,6 +4,21 @@ $(document).ready(function() {
   });
 });
 
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+  var origThing = document.getElementById(data);
+  var newThing = origThing.cloneNode(true);
+    ev.target.appendChild(newThing);
+}
+
 // function writeTitle(){
 //     document.getElementById('function').innerHTML="func";
 //     document.getElementById('function').style.color="white";
@@ -124,3 +139,34 @@ function stopClean(){
     document.getElementById('test4').style.fontWeight="normal";
     document.getElementById('test4').style.borderTop="transparent";
 }
+
+$('.main-nav').on('click',function(){
+    $('ul').slideToggle(280);
+  });
+
+function showCode1(){
+    document.getElementById('thing6').style.color="lime";
+    document.getElementById('thing6').style.border="1px solid lime";
+}
+
+function showCode2(){
+    document.getElementById('thing7').style.color="aqua";
+    document.getElementById('thing7').style.border="1px solid aqua";
+}
+
+function showCode3(){
+    document.getElementById('thing8').style.color="red";
+    document.getElementById('thing8').style.border="1px solid red";
+}
+
+function showCode4(){
+    document.getElementById('thing9').style.color="yellow";
+    document.getElementById('thing9').style.border="1px solid yellow";
+}
+
+function showCode5(){
+    document.getElementById('thing10').style.color="magenta";
+    document.getElementById('thing10').style.border="1px solid magenta";
+}
+
+// 
