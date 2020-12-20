@@ -710,6 +710,13 @@ li{
   -webkit-transition: all .3s ease-in-out;
 }
 #thing1{
+  border: 1px solid white;
+  color:white;
+  text-transform: none !important;
+  letter-spacing: normal;
+  -webkit-text-size-adjust:none!important;
+}
+#thing12{
   border: 1px solid lime;
   color:lime;
   text-transform: none !important;

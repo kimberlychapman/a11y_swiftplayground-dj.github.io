@@ -36,7 +36,7 @@ function drop(ev) {
 //     document.getElementById('function').style.borderTop="transparent";
 // }
 function countLoops(){
-    document.getElementById('test').innerHTML="for i in 1 ... 4 {";
+    document.getElementById('test').innerHTML="let oldEnough==true";
     document.getElementById('test').style.color="white";
     document.getElementById('test').style.borderBottom="solid white 2px";
     document.getElementById('test').style.borderTop="solid white 2px";
@@ -51,10 +51,11 @@ function totalLoops(){
     document.getElementById('test').style.borderBottom="solid #222 1px";
     document.getElementById('test').style.fontWeight="normal";
     document.getElementById('test').style.borderTop="transparent";
+    document.getElementById('test').style.fontWeight="normal";
 }
 
 function runTest(){
-    document.getElementById('test1').innerHTML="if &nbsp !minors {";
+    document.getElementById('test1').innerHTML="function playSet() {";
     document.getElementById('test1').style.color="aqua";
     document.getElementById('test1').style.borderBottom="solid aqua 2px";
     document.getElementById('test1').style.borderTop="solid aqua 2px";
@@ -71,7 +72,7 @@ function endTest(){
 }
 
 function getTrack(){
-    document.getElementById('test0').innerHTML="getSongRequest( )";
+    document.getElementById('test0').innerHTML="if (!oldEnough) {";
     document.getElementById('test0').style.color="lime";
     document.getElementById('test0').style.borderBottom="solid lime 2px";
     document.getElementById('test0').style.borderTop="solid lime 2px";
@@ -89,7 +90,7 @@ function stopTrack(){
 }
 
 function playExplicit(){
-    document.getElementById('test2').innerHTML="playExplicit( ) }";
+    document.getElementById('test2').innerHTML="cleanversion.play() };";
     document.getElementById('test2').style.color="red";
     document.getElementById('test2').style.borderBottom="solid red 2px";
     document.getElementById('test2').style.borderTop="solid red 2px";
@@ -107,7 +108,7 @@ function stopExplicit(){
 }
 
 function elseTrack(){
-    document.getElementById('test3').innerHTML="else if areMinors( ) {";
+    document.getElementById('test3').innerHTML="else {";
     document.getElementById('test3').style.color="yellow";
     document.getElementById('test3').style.borderBottom="solid yellow 2px";
     document.getElementById('test3').style.borderTop="solid yellow 2px";
@@ -125,7 +126,7 @@ function elsePlay(){
 }
 
 function playClean(){
-    document.getElementById('test4').innerHTML="playClean( ) }&nbsp }";
+    document.getElementById('test4').innerHTML="explicitversion.play() }; }";
     document.getElementById('test4').style.color="magenta";
     document.getElementById('test4').style.borderBottom="solid magenta 2px";
     document.getElementById('test4').style.borderTop="solid magenta 2px";
