@@ -66,22 +66,48 @@ body {
   border-bottom: 1px solid #222;
   background: #2a2a2a;
 }
-.nav li a,
-.nav li #test {
+/* #test,
+#test0,
+#test1,
+#test2,
+#test3,
+#test4{
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction:row;
+} */
+.nav li a,
+.nav li #test,
+.nav li #test0,
+.nav li #test1,
+.nav li #test2, 
+.nav li #test3,
+.nav li #test4   {
+  position: relative;
+  display: flex;
+  flex-direction:row;
   padding: 15px 15px 15px 20px;
   font-size: 16px;
   color: #eee;
   border-bottom: 1px solid #222;
 }
 .nav li a:before,
-.nav li #test:before {
+.nav li #test:before,
+.nav li #test0:before,
+.nav li #test1:before,
+.nav li #test2:before, 
+.nav li #test3:before,
+.nav li #test4:before   {
   font: 14px fontawesome;
   position: absolute;
   top: 14px;
   left: 20px;
 }
+#spotify{
+  height:35px;
+  width:35px;
+}
+
 /* .nav li:nth-child(1) a:before {
   content: '\f00a';
 } */
@@ -754,39 +780,87 @@ li{
   opacity: 0.8;
   border-radius: 5%;;
 }
-#drop-box1{
+
+#drop-box7{
+  position:absolute;
+  top:88%;
+  left:14.5%;
+  font-size:15px;
+  width:230px;
+  border-image-source: linear-gradient(to bottom, #ff00ff 0%, #00ffff 100%);
+  border-image-slice: 5;
+  /* margin-left:10px; */
+  /* margin-right:10px; */
+  /* margin-left:200px;
+  border-top: dotted aqua 5px;
+  border-bottom: dotted magenta 5px;
+  border-left: dotted aqua 5px;
+  border-right:dotted magenta 5px; */
+}
+/* #drop-box1{
   position:absolute;
   top:76%;
-  left:15%;
+  left:78%;
   font-size:15px;
-}
+  margin-left:10px;
+} */
 #drop-box2{
   position:absolute;
   top:88%;
-  left:15%;
+  left:29.64%;
   font-size:15px;
+  /* margin-left:10px; */
+  margin-right:10px;
 }
 #drop-box3{
   position:absolute;
   top:88%;
-  left:27%;
+  left:41.75%;
   font-size:15px;
+  /* margin-left:10px; */
+  margin-right:10px;
 }
 #drop-box4{
   position:absolute;
   top:88%;
-  left:39%;
+  left:53.86%;
   font-size:15px;
+  margin-right:10px;
 }
 #drop-box5{
   position:absolute;
   top:88%;
-  left:51%;
+  left:65.97%;
   font-size:15px;
+  margin-right:10px;
+  /* margin-left:10px; */
 }
 #drop-box6{
   position:absolute;
   top:88%;
-  left:63%;
+  left:78.08%;
   font-size:15px;
+  /* margin-left:10px; */
+  margin-right:10px;
 }
+
+
+
+/* .track-list{
+  position: relative;
+  top:18%; 
+  left:10%;
+  background-color: black;
+  height:80px;
+  width:150;
+} */
+
+/* #speaker-boxes{
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  height:90px;
+  width:150px;
+  background-color: white;
+  border:solid 2px magenta;
+} */

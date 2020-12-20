@@ -16,8 +16,8 @@
   document.getElementById(me).outerHTML = ""
   }
 </script>
-</head>
-<body>
+<!-- </head> -->
+
 
 <script>
   $('.main-nav').on('click',function(){
@@ -26,136 +26,157 @@
 </script>
 
 
-
-<script type="text/javascript" src="script.js"></script>
+</head>
+<!-- <script type="text/javascript" src="script.js"></script> -->
+<body>
 <!-- partial:index.partial.html -->
-<div class="wrapper">
-  <div class="sidebar">
-    <div class="title">Run Code</div>
-    <ul class="nav">
-      <li> 
-        <!-- <a id="function" onclick=writeTitle() ondblclick=writeFunction()>Command</a> -->
-        <a id="test" onclick=countLoops() ondblclick=totalLoops()>Command</a>
-        <a id="test0" onclick=getTrack() ondblclick=stopTrack()>Command</a>
-        <a id="test1" onclick=runTest() ondblclick=endTest()>Command</a>
-        <a id="test2" onclick=playExplicit() ondblclick=stopExplicit()>Command</a>
-        <a id="test3" onclick=elseTrack() ondblclick=elsePlay()>Command</a>
-        <a id="test4" onclick=playClean() ondblclick=stopClean()>Command</a>
-      </li>
-      <!-- <li>
-        <a class='active'>Milestones</a>
-      </li> -->
-    
-      <!-- <li>
-        <a>Previews</a>
-      </li>
-      <li>
-        <a>Assets</a>
-      </li>
-      <li>
-        <a>Settings</a>
-      </li>
-      <li>
-        <a>Logout</a>
-      </li> -->
+  <section>
+    <audio id="minors" src="audio/minors_noise.mp3" type="audio/mp3"></audio>
+    <audio id="college" src="audio/college.mp3" type="audio/mp3"></audio>
+    <audio id="wap-clean" src="audio/wap-clean.m4a" type="audio/m4a"></audio>
+    <audio id="wap-explicit" src="audio/wap-explicit.m4a" type="audio/m4a"></audio>
+    <audio id="right-explicit" src="audio/right-explicit.m4a" type="audio/m4a"></audio>
+    <audio id="night-explicit" src="audio/night-explicit.m4a" type="audio/m4a"></audio>
+  </section>
+  <!-- <div id="speaker-boxes">
+    <p style="font-family: 'Montserrat', sans-serif; font-size:16pt; color:white;">Testing</p>
+  </div> -->
+  <div class="wrapper">
+    <div class="sidebar">
+      <div class="title">Play Set</div>
+      <ul class="nav">
+        <li> 
+          <!-- <a id="function" onclick=writeTitle() ondblclick=writeFunction()>Command</a> -->
+          <a id="test" onclick=countLoops() ondblclick=totalLoops()>Queue</a>
+          <a id="test0" onclick=getTrack() ondblclick=stopTrack()>Queue</a>
+          <a id="test1" onclick=runTest() ondblclick=endTest()>Queue</a>
+          <a id="test2" onclick=playExplicit() ondblclick=stopExplicit()>Queue</a>
+          <a id="test3" onclick=elseTrack() ondblclick=elsePlay()>Queue</a>
+          <a id="test4" onclick=playClean() ondblclick=stopClean()>Queue</a>
+        </li>
+        <!-- <li>
+          <a class='active'>Milestones</a>
+        </li> -->
+      
+        <!-- <li>
+          <a>Previews</a>
+        </li>
+        <li>
+          <a>Assets</a>
+        </li>
+        <li>
+          <a>Settings</a>
+        </li>
+        <li>
+          <a>Logout</a>
+        </li> -->
+      </ul>
+    </div>
+    <div class="content content-is-open">
+      <span class='side-panel-toggle'>
+        <i class="fa fa-bars" style="color:white;"></i>
+      </span>
+      <!-- <h1>Flexbox Off Canvas Menu</h1>
+      <h2>Lightweight, simple, easy to use</h2>
+      <div class="well well-sm">
+
+        <p>Banh mi street art organic, bicycle rights synth YOLO Neutra. Try-hard cliche vegan mlkshk actually. Godard pour-over locavore tousled synth, try-hard Portland single-origin coffee church-key gluten-free 90's blog. Cliche blog tote bag, literally Banksy viral biodiesel Portland High Life. Marfa Neutra selvage, photo booth tilde whatever 8-bit pork belly irony post-ironic forage slow-carb. Pickled chia wayfarers, gentrify letterpress gastropub food truck seitan meditation trust fund cliche biodiesel sartorial. Tousled skateboard Thundercats, mumblecore jean shorts 90's flexitarian deep v gentrify.</p>
+
+        <p>Banh mi street art organic, bicycle rights synth YOLO Neutra. Try-hard cliche vegan mlkshk actually. Godard pour-over locavore tousled synth, try-hard Portland single-origin coffee church-key gluten-free 90's blog. Cliche blog tote bag, literally Banksy viral biodiesel Portland High Life. Marfa Neutra selvage, photo booth tilde whatever 8-bit pork belly irony post-ironic forage slow-carb. Pickled chia wayfarers, gentrify letterpress gastropub food truck seitan meditation trust fund cliche biodiesel sartorial. Tousled skateboard Thundercats, mumblecore jean shorts 90's flexitarian deep v gentrify.</p>
+      </div> -->
+      <hr>
+    </div>
+  </div>
+  <div class="image-hover">
+    <div class="img-wrap">
+    <img src="http://zeypo-design.com/ressources/img/laurent.jpg" />
+    </div>
+    <div class="img-shadow" onmouseover="playSound1()" onmouseout="stopSound1()"></div>
+    <div class="hover"><p style="color:black; font-size:36pt; font-weight:bold;"></p>Minors<hr/></div>
+  </div>
+
+  <div class="image-hover2">
+    <div class="img-wrap2">
+    <img src="http://zeypo-design.com/ressources/img/laurent.jpg" />
+    </div>
+    <div class="img-shadow2" onmouseover="playSound2()" onmouseout="stopSound2()"></div>
+    <div class="hover2"><p style="color:black; font-size:36pt; padding-top:28px;">Not Minors</p><hr/></div>
+  </div>
+
+  <div class="image-hover3">
+    <div class="img-wrap3">
+    <img src="http://zeypo-design.com/ressources/img/laurent.jpg" />
+    </div>
+    <div class="img-shadow3" onmouseover="playSound3()" onmouseout="stopSound3()"></div>
+    <div class="hover3"><p>Not Minors</p><hr/></div>
+  </div>
+
+  <div class="image-hover4">
+    <div class="img-wrap4">
+    <img src="http://zeypo-design.com/ressources/img/laurent.jpg" />
+    </div>
+    <div class="img-shadow4" onmouseover="playSound4()" onmouseout="stopSound4()"></div>
+    <div class="hover4"><p style="color:black; font-size:36pt; margin-bottom:-25px;">Not Minors</p><hr/></div>
+  </div>
+
+  <div class="wrap-up">
+    <div class="main-nav">Playlist<span><img id="arrow-down"src="img/drop-down-arrow.png"/></span></div>
+    <ul id="list-items">
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing1" ondblclick="remove(this.id)">getsongRequest( )</div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing2" ondblclick="remove(this.id)">if &nbsp!minors <span id="emphasis">{</span></div></li>
+        <li=><div class="thing" draggable="true" ondragstart="drag(event)" id="thing3" ondblclick="remove(this.id)">playExplicit( )<span id="emphasis"> }</span></div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing4" ondblclick="remove(this.id)">else if areMinors<span id="emphasis"> {</span></div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing5" ondblclick="remove(this.id)">playClean( )<span id="emphasis"> } &nbsp}</span></div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing6" ondblclick="showCode1()" oncontextmenu="remove(this.id)">getsongRequest( )</div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing7" ondblclick="showCode2()"  oncontextmenu="remove(this.id)">if &nbsp!minors <span id="emphasis">{</span></div></li>
+        <li=><div class="thing" draggable="true" ondragstart="drag(event)" id="thing8" ondblclick="showCode3()"  oncontextmenu="remove(this.id)">playExplicit( )<span id="emphasis"> }</span></div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing9" ondblclick="showCode4()" oncontextmenu="remove(this.id)">else if areMinors<span id="emphasis"> {</span></div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing10" ondblclick="showCode5()" oncontextmenu="remove(this.id)">playClean( )<span id="emphasis"> } &nbsp}</span></div></li>
+        <!-- <a id="two" href="#">Code</a></li> -->
+      <!-- <li id="one"><a id="two" href="#">Code</a></li>
+      <li id="one"><a id="two" href="#">Code</a></li>
+      <li id="one"><a id="two" href="#">Code</a></li>
+      <li id="one"><a id="two" href="#">Code</a></li> -->
     </ul>
   </div>
-  <div class="content content-is-open">
-    <span class='side-panel-toggle'>
-      <i class="fa fa-bars" style="color:white;"></i>
-    </span>
-    <!-- <h1>Flexbox Off Canvas Menu</h1>
-    <h2>Lightweight, simple, easy to use</h2>
-    <div class="well well-sm">
 
-      <p>Banh mi street art organic, bicycle rights synth YOLO Neutra. Try-hard cliche vegan mlkshk actually. Godard pour-over locavore tousled synth, try-hard Portland single-origin coffee church-key gluten-free 90's blog. Cliche blog tote bag, literally Banksy viral biodiesel Portland High Life. Marfa Neutra selvage, photo booth tilde whatever 8-bit pork belly irony post-ironic forage slow-carb. Pickled chia wayfarers, gentrify letterpress gastropub food truck seitan meditation trust fund cliche biodiesel sartorial. Tousled skateboard Thundercats, mumblecore jean shorts 90's flexitarian deep v gentrify.</p>
+  <!-- <div class="drop-box" id="drop-box1" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+  <div id="drop-boxes">
+    <div class="drop-box" id="drop-box2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="drop-box" id="drop-box3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    
+    <div class="drop-box" id="drop-box4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
-      <p>Banh mi street art organic, bicycle rights synth YOLO Neutra. Try-hard cliche vegan mlkshk actually. Godard pour-over locavore tousled synth, try-hard Portland single-origin coffee church-key gluten-free 90's blog. Cliche blog tote bag, literally Banksy viral biodiesel Portland High Life. Marfa Neutra selvage, photo booth tilde whatever 8-bit pork belly irony post-ironic forage slow-carb. Pickled chia wayfarers, gentrify letterpress gastropub food truck seitan meditation trust fund cliche biodiesel sartorial. Tousled skateboard Thundercats, mumblecore jean shorts 90's flexitarian deep v gentrify.</p>
-    </div> -->
-    <hr>
+    <div class="drop-box" id="drop-box5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="drop-box" id="drop-box6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="drop-box" id="drop-box7"></div>
   </div>
-</div>
-<div class="image-hover">
-  <div class="img-wrap">
-  <img src="http://zeypo-design.com/ressources/img/laurent.jpg" />
-  </div>
-  <div class="img-shadow"></div>
-  <div class="hover"><p style="color:black; font-size:36pt; font-weight:bold;"></p>Minors<hr/></div>
-</div>
+  
+  <!-- <div class="track-list">
 
-<div class="image-hover2">
-  <div class="img-wrap2">
-  <img src="http://zeypo-design.com/ressources/img/laurent.jpg" />
-  </div>
-  <div class="img-shadow2"></div>
-  <div class="hover2"><p style="color:black; font-size:36pt; padding-top:28px;">Not Minors</p><hr/></div>
-</div>
+  </div> -->
 
-<div class="image-hover3">
-  <div class="img-wrap3">
-  <img src="http://zeypo-design.com/ressources/img/laurent.jpg" />
-  </div>
-  <div class="img-shadow3"></div>
-  <div class="hover3"><p>Not Minors</p><hr/></div>
-</div>
+  <!-- <div class="col" id="col10">
+    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing8" ondblclick="remove(this.id)">if</div>
+    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing9" ondblclick="remove(this.id)">else if</div>
+    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing7" ondblclick="remove(this.id)"><img id="is-gem" src="img/red-gem.png">isOnGem{</div>
+    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing6" ondblclick="remove(this.id)"><img id="not-gem" src="img/not-gem.png">!isOnGem{</div>
+    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing1" ondblclick="remove(this.id)"><img id="move" src="img/moveForward().png">moveForward()</div>
+    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing10" ondblclick="remove(this.id)"><img id="turn" src="img/turnaround.png">turnAround()</div>
+    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing2" ondblclick="remove(this.id)"><img id="left" src="img/turnLeft().png">turnLeft()</div>
+    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing3" ondblclick="remove(this.id)"><img id="right" src="img/turnRight().png">turnRight()</div>
+    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing4" ondblclick="remove(this.id)"><img id="get-gem" src="img/the-gem.png">collectGem()</div>
+    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing11" ondblclick="remove(this.id)"><img id="move-loop" src="img/move-loop.png">Loop</div>
+  <div class="thing" draggable="true" ondragstart="drag(event)" id="thing5" ondblclick="remove(this.id)">toggleSwitch()</div> -->
+  <!-- </div>  -->
 
-<div class="image-hover4">
-  <div class="img-wrap4">
-  <img src="http://zeypo-design.com/ressources/img/laurent.jpg" />
-  </div>
-  <div class="img-shadow4"></div>
-  <div class="hover4"><p style="color:black; font-size:36pt; margin-bottom:-25px;">Not Minors</p><hr/></div>
-</div>
+  <!-- partial -->
 
-<div class="wrap-up">
-  <div class="main-nav">Play Set<span><img id="arrow-down"src="img/drop-down-arrow.png"/></span></div>
-  <ul id="list-items">
-      <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing1" ondblclick="remove(this.id)">getsongRequest( )</div></li>
-      <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing2" ondblclick="remove(this.id)">if &nbsp!minors <span id="emphasis">{</span></div></li>
-      <li=><div class="thing" draggable="true" ondragstart="drag(event)" id="thing3" ondblclick="remove(this.id)">playExplicit( )<span id="emphasis"> }</span></div></li>
-      <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing4" ondblclick="remove(this.id)">else if areMinors<span id="emphasis"> {</span></div></li>
-      <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing5" ondblclick="remove(this.id)">playClean( )<span id="emphasis"> } &nbsp}</span></div></li>
-      <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing6" ondblclick="showCode1()" oncontextmenu="remove(this.id)">getsongRequest( )</div></li>
-      <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing7" ondblclick="showCode2()"  oncontextmenu="remove(this.id)">if &nbsp!minors <span id="emphasis">{</span></div></li>
-      <li=><div class="thing" draggable="true" ondragstart="drag(event)" id="thing8" ondblclick="showCode3()"  oncontextmenu="remove(this.id)">playExplicit( )<span id="emphasis"> }</span></div></li>
-      <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing9" ondblclick="showCode4()" oncontextmenu="remove(this.id)">else if areMinors<span id="emphasis"> {</span></div></li>
-        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing10" ondblclick="showCode5()" oncontextmenu="remove(this.id)">playClean( )<span id="emphasis"> } &nbsp}</span></div></li>
-      <!-- <a id="two" href="#">Code</a></li> -->
-    <!-- <li id="one"><a id="two" href="#">Code</a></li>
-    <li id="one"><a id="two" href="#">Code</a></li>
-    <li id="one"><a id="two" href="#">Code</a></li>
-    <li id="one"><a id="two" href="#">Code</a></li> -->
-  </ul>
-</div>
-
-<!-- <div class="drop-box" id="drop-box1" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
-<div class="drop-box" id="drop-box2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-<div class="drop-box" id="drop-box3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-<div class="drop-box" id="drop-box4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-<div class="drop-box" id="drop-box5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-<div class="drop-box" id="drop-box6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-<!-- <div class="col" id="col10">
-  <div class="thing" draggable="true" ondragstart="drag(event)" id="thing8" ondblclick="remove(this.id)">if</div>
-  <div class="thing" draggable="true" ondragstart="drag(event)" id="thing9" ondblclick="remove(this.id)">else if</div>
-  <div class="thing" draggable="true" ondragstart="drag(event)" id="thing7" ondblclick="remove(this.id)"><img id="is-gem" src="img/red-gem.png">isOnGem{</div>
-  <div class="thing" draggable="true" ondragstart="drag(event)" id="thing6" ondblclick="remove(this.id)"><img id="not-gem" src="img/not-gem.png">!isOnGem{</div>
-  <div class="thing" draggable="true" ondragstart="drag(event)" id="thing1" ondblclick="remove(this.id)"><img id="move" src="img/moveForward().png">moveForward()</div>
-  <div class="thing" draggable="true" ondragstart="drag(event)" id="thing10" ondblclick="remove(this.id)"><img id="turn" src="img/turnaround.png">turnAround()</div>
-  <div class="thing" draggable="true" ondragstart="drag(event)" id="thing2" ondblclick="remove(this.id)"><img id="left" src="img/turnLeft().png">turnLeft()</div>
-  <div class="thing" draggable="true" ondragstart="drag(event)" id="thing3" ondblclick="remove(this.id)"><img id="right" src="img/turnRight().png">turnRight()</div>
-  <div class="thing" draggable="true" ondragstart="drag(event)" id="thing4" ondblclick="remove(this.id)"><img id="get-gem" src="img/the-gem.png">collectGem()</div>
-  <div class="thing" draggable="true" ondragstart="drag(event)" id="thing11" ondblclick="remove(this.id)"><img id="move-loop" src="img/move-loop.png">Loop</div>
- <div class="thing" draggable="true" ondragstart="drag(event)" id="thing5" ondblclick="remove(this.id)">toggleSwitch()</div> -->
-</div> 
-
-<!-- partial -->
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-<script type = "text/javascript"
-      src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
-   </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script type = "text/javascript"
+        src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   
