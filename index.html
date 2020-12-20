@@ -123,15 +123,16 @@
     <div class="main-nav">Playlist<span><img id="arrow-down"src="img/drop-down-arrow.png"/></span></div>
     <ul id="list-items">
         <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing1" ondblclick="remove(this.id)">getsongRequest( )</div></li>
-        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing2" ondblclick="remove(this.id)">if &nbsp!minors <span id="emphasis">{</span></div></li>
-        <li=><div class="thing" draggable="true" ondragstart="drag(event)" id="thing3" ondblclick="remove(this.id)">playExplicit( )<span id="emphasis"> }</span></div></li>
-        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing4" ondblclick="remove(this.id)">else if areMinors<span id="emphasis"> {</span></div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing2" ondblclick="remove(this.id)">if &nbsp!oldEnough <span id="emphasis">{</span></div></li>
         <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing5" ondblclick="remove(this.id)">playClean( )<span id="emphasis"> } &nbsp}</span></div></li>
-        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing6" ondblclick="showCode1()" oncontextmenu="remove(this.id)">getsongRequest( )</div></li>
-        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing7" ondblclick="showCode2()"  oncontextmenu="remove(this.id)">if &nbsp!minors <span id="emphasis">{</span></div></li>
-        <li=><div class="thing" draggable="true" ondragstart="drag(event)" id="thing8" ondblclick="showCode3()"  oncontextmenu="remove(this.id)">playExplicit( )<span id="emphasis"> }</span></div></li>
-        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing9" ondblclick="showCode4()" oncontextmenu="remove(this.id)">else if areMinors<span id="emphasis"> {</span></div></li>
-        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing10" ondblclick="showCode5()" oncontextmenu="remove(this.id)">playClean( )<span id="emphasis"> } &nbsp}</span></div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing4" ondblclick="remove(this.id)">else if oldEnough<span id="emphasis"> {</span></div></li>
+        <li=><div class="thing" draggable="true" ondragstart="drag(event)" id="thing3" ondblclick="remove(this.id)">playExplicit( )<span id="emphasis"> }</span></div></li>
+
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing6" oncontextmenu="showCode1()" ondblclick="remove(this.id)">getsongRequest( )</div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing7" oncontextmenu="showCode2()" ondblclick="remove(this.id)">if &nbsp!minors <span id="emphasis">{</span></div></li>
+        <li=><div class="thing" draggable="true" ondragstart="drag(event)" id="thing8" oncontextmenu="showCode3()" ondblclick="remove(this.id)">playExplicit( )<span id="emphasis"> }</span></div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing9" oncontextmenu="showCode4()" ondblclick="remove(this.id)">else if areMinors<span id="emphasis"> {</span></div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing10" oncontextmenu="showCode5()" ondblclick="remove(this.id)">playClean( )<span id="emphasis"> } &nbsp}</span></div></li>
         <!-- <a id="two" href="#">Code</a></li> -->
       <!-- <li id="one"><a id="two" href="#">Code</a></li>
       <li id="one"><a id="two" href="#">Code</a></li>
@@ -142,14 +143,36 @@
 
   <!-- <div class="drop-box" id="drop-box1" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
   <div id="drop-boxes">
-    <div class="drop-box" id="drop-box2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <div class="drop-box" id="drop-box3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-    
     <div class="drop-box" id="drop-box4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
     <div class="drop-box" id="drop-box5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <div class="drop-box" id="drop-box6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-    <div class="drop-box" id="drop-box7"></div>
+    <div class="drop-box" id="drop-box11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="drop-box" id="drop-box7">
+      <img id="speaker1" src="img/spotify-play.png" onclick="playTrack1()" ondblclick="endTrack1()">
+    </div>
+    <div class="drop-box" id="drop-box8">
+      <img id="speaker2" src="img/spotify-play.png" onclick="playTrack2()" ondblclick="endTrack2()">
+    </div>
+    <div class="drop-box" id="drop-box9">
+      <img id="speaker3" src="img/spotify-play.png" onclick="playTrack3()" ondblclick="endTrack3()">
+    </div>
+    <div class="drop-box" id="drop-box10">
+      <img id="speaker4" src="img/spotify-play.png" onclick="playTrack4()" ondblclick="endTrack4()">
+    </div>
+      <!-- <div id="song-box1"> -->
+        <!-- <img id="play-button" src="img/spotify-play.png"> -->
+      <!-- </div> -->
+      <!-- <div id="song-box2"> -->
+        <!-- <img id="play-button" src="img/spotify-play.png"> -->
+      <!-- </div> -->
+      <!-- <div id="song-box3"> -->
+        <!-- <img id="play-button" src="img/spotify-play.png"> -->
+      <!-- </div> -->
+      <!-- <div id="song-box4"> -->
+        <!-- <img id="play-button" src="img/spotify-play.png"> -->
+      <!-- </div> -->
+
   </div>
   
   <!-- <div class="track-list">

@@ -214,4 +214,56 @@ function stopSound4(){
     finallysound.pause();
    finallysound.currentTime = 0;
 }
+
+function playTrack1(){
+    var track1=document.getElementById('wap-clean');
+    track1.play();
+    document.getElementById('speaker1').src="img/spotify-speaker.png";
+}
+
+function endTrack1(){
+    var track1=document.getElementById('wap-clean');
+    track1.pause();
+    track1.currentTime = 0;
+    document.getElementById('speaker1').src="img/spotify-play.png";
+}
+
+function playTrack2(){
+    var track2=document.getElementById('wap-explicit');
+    track2.play();
+    document.getElementById('speaker2').src="img/spotify-speaker.png";
+}
+
+function endTrack2(){
+    var track2=document.getElementById('wap-explicit');
+    track2.pause();
+    track2.currentTime = 0;
+    document.getElementById('speaker2').src="img/spotify-play.png";
+}
+
+function playTrack3(){
+    var track3=document.getElementById('night-explicit');
+    track3.play();
+    document.getElementById('speaker3').src="img/spotify-speaker.png";
+}
+
+function endTrack3(){
+    var track3=document.getElementById('night-explicit');
+    track3.pause();
+    track3.currentTime = 0;
+    document.getElementById('speaker3').src="img/spotify-play.png";
+}
+
+function playTrack4(){
+    var track4=document.getElementById('right-explicit');
+    track4.play();
+    document.getElementById('speaker4').src="img/spotify-speaker.png";
+}
+function endTrack4(){
+    var track4=document.getElementById('right-explicit');
+    track4.pause();
+    track4.currentTime = 0;
+    document.getElementById('speaker4').src="img/spotify-play.png";
+}
+
 // 

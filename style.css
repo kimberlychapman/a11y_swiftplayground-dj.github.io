@@ -772,7 +772,7 @@ li{
 
 .drop-box{
   width:180px;
-  height:70px;
+  height:60px;
   margin-top:-1px;
   background: #2a2a2a;
   color: #fefefe;
@@ -784,19 +784,57 @@ li{
 #drop-box7{
   position:absolute;
   top:88%;
-  left:14.5%;
+  left:13%;
   font-size:15px;
-  width:230px;
+  width:60px;
   border-image-source: linear-gradient(to bottom, #ff00ff 0%, #00ffff 100%);
   border-image-slice: 5;
-  /* margin-left:10px; */
-  /* margin-right:10px; */
-  /* margin-left:200px;
-  border-top: dotted aqua 5px;
-  border-bottom: dotted magenta 5px;
-  border-left: dotted aqua 5px;
-  border-right:dotted magenta 5px; */
+  display:flex;
+  flex-direction: row;
 }
+#speaker1,
+#speaker2,
+#speaker3,
+#speaker4{
+  height:57px;
+  width:57px;
+}
+
+#drop-box8{
+  position:absolute;
+  top:88%;
+  left:17%;
+  font-size:15px;
+  width:60px;
+  border-image-source: linear-gradient(to bottom, #ff00ff 0%, #00ffff 100%);
+  border-image-slice: 5;
+  display:flex;
+  flex-direction: row;
+}
+#drop-box9{
+  position:absolute;
+  top:88%;
+  left:21%;
+  font-size:15px;
+  width:60px;
+  border-image-source: linear-gradient(to bottom, #ff00ff 0%, #00ffff 100%);
+  border-image-slice: 5;
+  display:flex;
+  flex-direction: row;
+}
+#drop-box10{
+  position:absolute;
+  top:88%;
+  left:25.25%;
+  font-size:15px;
+  width:60px;
+  border-image-source: linear-gradient(to bottom, #ff00ff 0%, #00ffff 100%);
+  border-image-slice: 5;
+  display:flex;
+  flex-direction: row;
+}
+
+#song-box
 /* #drop-box1{
   position:absolute;
   top:76%;
@@ -807,7 +845,7 @@ li{
 #drop-box2{
   position:absolute;
   top:88%;
-  left:29.64%;
+  left:30%;
   font-size:15px;
   /* margin-left:10px; */
   margin-right:10px;
@@ -815,7 +853,7 @@ li{
 #drop-box3{
   position:absolute;
   top:88%;
-  left:41.75%;
+  left:33%;
   font-size:15px;
   /* margin-left:10px; */
   margin-right:10px;
@@ -823,14 +861,14 @@ li{
 #drop-box4{
   position:absolute;
   top:88%;
-  left:53.86%;
+  left:44.5%;
   font-size:15px;
   margin-right:10px;
 }
 #drop-box5{
   position:absolute;
   top:88%;
-  left:65.97%;
+  left:56%;
   font-size:15px;
   margin-right:10px;
   /* margin-left:10px; */
@@ -838,11 +876,21 @@ li{
 #drop-box6{
   position:absolute;
   top:88%;
-  left:78.08%;
+  left:67.5%;
   font-size:15px;
   /* margin-left:10px; */
   margin-right:10px;
 }
+
+#drop-box11{
+  position:absolute;
+  top:88%;
+  left:79%;
+  font-size:15px;
+  /* margin-left:10px; */
+  margin-right:10px;
+}
+
 
 
 
