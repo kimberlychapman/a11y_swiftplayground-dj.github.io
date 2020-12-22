@@ -38,25 +38,96 @@ $(document).ready(function() {
   function countLoops(){
     //   document.getElementById('test').innerHTML="for i in 1 ... 4 {";
       document.getElementById('test').style.color="white";
-      
-      document.getElementById('test').style.borderBottom="solid white 2px";
-      document.getElementById('test').style.borderTop="solid white 2px";
-      document.getElementById('test').style.fontWeight="bold";
-      // document.getElementById('test').style.backgroundColor="black";
+      document.getElementById('test').style.borderBottom="solid transparent 2px"; 
+      document.getElementById('test').style.borderTop="solid #eee 2px";
+
+      document.getElementById('test0').style.color="white";
+      document.getElementById('test0').style.borderBottom="solid 2px transparent";
+      document.getElementById('test0').style.borderBottom="solid transparent 2px";
+
+      document.getElementById('test1').style.color="white";
+ 
+      document.getElementById('test2').style.color="#eee";
+      document.getElementById('test2').style.borderBottom="solid #eee 2px";
+
+    //   document.getElementById('test3').style.borderTop="solid #eee 2px";
+      document.getElementById('test3').style.color="#eee";
+
+      document.getElementById('test4').style.color="#eee";
+    //   document.getElementById('test4').style.borderBottom="solid #eee 2px";
+
+      document.getElementById('test5').style.color="white";
+      document.getElementById('test5').style.borderBottom="solid transparent 2px"; 
+
+      document.getElementById('test6').style.color="white";
+      document.getElementById('test6').style.borderBottom="solid transparent 2px"; 
+
+      document.getElementById('test7').style.color="white";
+      document.getElementById('test7').style.borderBottom="solid transparent 2px"; 
+
+      document.getElementById('test8').style.color="white";
+      document.getElementById('test8').style.borderBottom="solid transparent 2px";
+
+      document.getElementById('test9').style.color="white";
+      document.getElementById('test9').style.borderBottom="solid transparent 2px";
   }
   
   function totalLoops(){
-      document.getElementById('test').innerHTML="Queue";
+    //   document.getElementById('test').innerHTML="Queue";
       // document.getElementById('test').style.backgroundColor="#333";
       document.getElementById('test').style.color="transparent";
       document.getElementById('test').style.borderBottom="solid #222 1px";
       document.getElementById('test').style.fontWeight="normal";
       document.getElementById('test').style.borderTop="transparent";
+
+      document.getElementById('test0').style.color="transparent";
+      document.getElementById('test0').style.borderBottom="solid #222 1px";
+      document.getElementById('test0').style.fontWeight="normal";
+      document.getElementById('test0').style.borderTop="transparent";
+
+      document.getElementById('test1').style.color="transparent";
+      document.getElementById('test1').style.borderBottom="solid #222 1px";
+      document.getElementById('test1').style.fontWeight="normal";
+      document.getElementById('test1').style.borderTop="transparent";
+
+      document.getElementById('test2').style.color="transparent";
+      document.getElementById('test2').style.borderBottom="solid #222 2px";
+      document.getElementById('test2').style.fontWeight="normal";
+
+      document.getElementById('test3').style.borderTop="transparent";
+      document.getElementById('test3').style.borderBottom="solid #222 2px";
+      document.getElementById('test3').style.color="transparent";
+
+      document.getElementById('test4').style.borderTop="transparent";
+      document.getElementById('test4').style.borderBottom="solid #222 2px";
+      document.getElementById('test4').style.color="transparent";
+
+      document.getElementById('test5').style.borderTop="transparent";
+      document.getElementById('test5').style.borderBottom="solid #222 2px";
+      document.getElementById('test5').style.color="transparent";
+
+      document.getElementById('test6').style.borderTop="transparent";
+      document.getElementById('test6').style.borderBottom="solid #222 2px";
+      document.getElementById('test6').style.color="transparent";
+
+
+      document.getElementById('test7').style.borderTop="transparent";
+      document.getElementById('test7').style.borderBottom="solid #222 2px";
+      document.getElementById('test7').style.color="transparent";
+
+      document.getElementById('test8').style.borderTop="transparent";
+      document.getElementById('test8').style.borderBottom="solid #222 2px";
+      document.getElementById('test8').style.color="transparent";
+
+      document.getElementById('test9').style.borderTop="transparent";
+      document.getElementById('test9').style.borderBottom="solid #222 2px";
+      document.getElementById('test9').style.color="transparent";
+    //   document.get1px solid #222;
   }
   
   function runTest(){
-      document.getElementById('test1').innerHTML="if &nbsp !minors {";
-      document.getElementById('test1').style.color="aqua";
+    //   document.getElementById('test1').innerHTML="if &nbsp !minors {";
+    //   document.getElementById('test1').style.color="aqua";
       document.getElementById('test1').style.borderBottom="solid aqua 2px";
       document.getElementById('test1').style.borderTop="solid aqua 2px";
       document.getElementById('test1').style.fontWeight="bold";
@@ -89,41 +160,42 @@ $(document).ready(function() {
       document.getElementById('test0').style.borderTop="transparent";
   }
   
-  function playExplicit(){
-      document.getElementById('test2').innerHTML="playExplicit( ) }";
-      document.getElementById('test2').style.color="red";
-      document.getElementById('test2').style.borderBottom="solid red 2px";
-      document.getElementById('test2').style.borderTop="solid red 2px";
-      document.getElementById('test2').style.fontWeight="bold";
+//   function showInt(){
+    //   document.getElementById('test2').innerHTML="playExplicit( ) }";
+    //   document.getElementById('test2').style.color="#eee";
+    //   document.getElementById('test2').style.borderBottom="solid #eee 2px";
+    //   document.getElementById('test2').style.borderTop="solid #eee 2px";
+    //   document.getElementById('test2').style.fontWeight="bold";
       // document.getElementById('test2').style.backgroundColor="black";   
-  }
+//   }
   
-  function stopExplicit(){
-      document.getElementById('test2').innerHTML="Queue";
+//   function hideInt(){
+    //   document.getElementById('test2').innerHTML="Queue";
       // document.getElementById('test2').style.backgroundColor="#333";
-      document.getElementById('test2').style.color="#eee";
-      document.getElementById('test2').style.borderBottom="solid #222 1px";
-      document.getElementById('test2').style.fontWeight="normal";
-      document.getElementById('test2').style.borderTop="transparent";
-  }
+    //   document.getElementById('test2').style.color="transparent";
+    //   document.getElementById('test2').style.borderBottom="solid #222 2px";
+    //   document.getElementById('test2').style.fontWeight="normal";
+    //   document.getElementById('test2').style.borderTop="transparent";
+//   }
   
-  function elseTrack(){
-      document.getElementById('test3').innerHTML="else if areMinors( ) {";
-      document.getElementById('test3').style.color="yellow";
-      document.getElementById('test3').style.borderBottom="solid yellow 2px";
-      document.getElementById('test3').style.borderTop="solid yellow 2px";
-      document.getElementById('test3').style.fontWeight="bold";
+//   function showWhile(){
+    //   document.getElementById('test3').innerHTML="else if areMinors( ) {";
+    //   document.getElementById('test3').style.color="#eee";
+    //   document.getElementById('test3').style.borderBottom="solid #eee 2px";
+    //   document.getElementById('test3').style.borderTop="solid #eee 2px";
+    //   document.getElementById('test3').style.fontWeight="bold";
       // document.getElementById('test3').style.backgroundColor="black";   
-  }
+//   }
   
-  function elsePlay(){
-      document.getElementById('test3').innerHTML="Queue";
+//   function hideWhile(){
+    //   document.getElementById('test3').innerHTML="Queue";
       // document.getElementById('test3').style.backgroundColor="#333";
-      document.getElementById('test3').style.color="#eee";
-      document.getElementById('test3').style.borderBottom="solid #222 1px";
-      document.getElementById('test3').style.fontWeight="normal";
-      document.getElementById('test3').style.borderTop="transparent";
-  }
+    //   document.getElementById('test3').style.color="#eee";
+    //     document.getElementById('test3').style.color="transparent";
+    //   document.getElementById('test3').style.borderBottom="solid #222 1px";
+    //   document.getElementById('test3').style.fontWeight="normal";
+//       document.getElementById('test3').style.borderTop="transparent";
+//   }
   
   function playClean(){
       document.getElementById('test4').innerHTML="playClean( ) }&nbsp }";

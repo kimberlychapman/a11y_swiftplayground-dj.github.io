@@ -93,7 +93,12 @@ body {
 .nav li #test1,
 .nav li #test2, 
 .nav li #test3,
-.nav li #test4   {
+.nav li #test4,
+.nav li #test5,
+.nav li #test6,
+.nav li #test7, 
+.nav li #test8,
+.nav li #test9   {
   position: relative;
   display: flex;
   flex-direction:row;
@@ -108,7 +113,12 @@ body {
 .nav li #test1:before,
 .nav li #test2:before, 
 .nav li #test3:before,
-.nav li #test4:before   {
+.nav li #test4:before,
+.nav li #test5:before,
+.nav li #test6:before,
+.nav li #test7:before,
+.nav li #test8:before,
+.nav li #test9:before     {
   font: 14px fontawesome;
   position: absolute;
   top: 14px;
@@ -818,6 +828,12 @@ li{
   font-size:17pt;
   font-weight:400;
 }
+
+#emphasis3{
+  font-size:15pt;
+  font-weight:400;
+}
+
 #arrow-down{
   height:20px;
   width:23px;
@@ -1013,6 +1029,64 @@ border:tomato 5px inset;
     font-size:15px;
     /* margin-left:10px; */
     margin-right:10px;
+  }
+
+  #drop-box23{
+    position:absolute;
+    top:78%;
+    left:86%;
+    font-size:15px;
+    width:240px;
+    height:120px;
+    display:flex;
+    flex-direction: column;
+    border:#00ffff inset 5px;
+    /* margin-left:10px; */
+    /* margin-right:10px; */
+  }
+  #top{
+    width:240px;
+    height:60px;
+    display:flex;
+    flex-direction: row;
+  }
+
+  .counter0{
+    width:46px;
+    height:60px;
+    border-right:#00ffff inset 5px;
+    /* border-left:#00ffff inset 5px; */
+    font-size:22px;
+    color:black;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    padding-top:10px;
+  }
+  .counter1, .counter2, .counter3{
+    width:46px;
+    height:60px;
+    /* border-right:#00ffff inset 5px; */
+    border-right:#00ffff inset 5px;
+    font-size:22px;
+    color:black;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    padding-top:10px;
+  }
+
+  .counter4{
+    width:46px;
+    height:60px;
+    /* border-right:#00ffff inset 5px; */
+    /* border-right:#00ffff inset 5px; */
+    font-size:22px;
+    color:black;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    padding-top:10px;
   }
 
 
