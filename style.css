@@ -182,7 +182,7 @@ body {
   border: 1px solid dimgray;
   left: 25%;
   margin-left: -100px;
-  margin-top:-775px;
+  margin-top:-690px;
   width: 290px;
   height: 290px;
   border-radius: 500px;
@@ -413,7 +413,7 @@ hr {
   border: 1px solid dimgray;
   left: 61%;
   /* margin-left: -300px; */
-  margin-top:-800px;
+  margin-top:-700px;
   width: 300px;
   height: 300px;
   border-radius: 500px;
@@ -839,6 +839,24 @@ li{
   border-image-slice: 5;
   display:flex;
   flex-direction: row;
+}
+
+#drop-box15{
+  position:absolute;
+  top:88%;
+  left:90%;
+  font-size:15px;
+  width:60px;
+  height:60px;
+  border-image-source: linear-gradient(to bottom, #ff00ff 0%, #00ffff 100%);
+  border-image-slice: 5;
+  border-radius:50%;
+  display:flex;
+  flex-direction: row;
+}
+
+#forward, .forward{
+  width:60px;
 }
 
 #song-box
