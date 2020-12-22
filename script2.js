@@ -266,5 +266,36 @@ $(document).ready(function() {
       track4.currentTime = 0;
       document.getElementById('speaker4').src="img/spotify-play.png";
   }
-  
+
+//   function showList(){
+//   document.getElementById('drop-box7').innerHTML="var winners=[1,2,3,4,5,6,7,8,9,10,11,12,<br>13,14,15,16]";
+//   document.getElementById('drop-box7').style.color="white";
+//   }
+
+//   function hideList(){
+//     document.getElementById('drop-box7').innerHTML="test";
+//     document.getElementById('drop-box7').style.color="transparent";
+//     }
+
+    function showCounter(){
+    // document.getElementById('drop-box7').innerHTML="var winners=[1,2,3,4,5,6,7,8,9,10,11,12,<br>13,14,15,16]";
+    document.getElementById('drop-box7').style.color="white";
+    // document.getElementById('drop-box8').innerHTML="var currentRound:<br>Int=0 &nbsp Champion=4";
+    document.getElementById('drop-box8').style.color="white";
+    // document.getElementById('drop-box9').innerHTML="while (currentRound &lt Champion) {";
+    document.getElementById('drop-box9').style.color="white";
+    // document.getElementById('drop-box10').innerHTML="for team in winners {";
+    document.getElementById('drop-box10').style.color="white";
+    }
+        
+    function hideCounter(){
+    // document.getElementById('drop-box7').innerHTML="test";
+    document.getElementById('drop-box7').style.color="transparent";
+    // document.getElementById('drop-box8').innerHTML="test";
+    document.getElementById('drop-box8').style.color="transparent";
+    // document.getElementById('drop-box9').innerHTML="test";
+    document.getElementById('drop-box9').style.color="transparent";
+    // document.getElementById('drop-box10').innerHTML="test";
+    document.getElementById('drop-box10').style.color="transparent";
+    }
   // 
