@@ -729,7 +729,7 @@ li{
 .thing, .thing:visited {
   text-decoration:none;
   padding-left:0;
-  color: #fefefe;
+  /* color: #fefefe; */
   padding:15px;
   display:block;
   transition: all .3s ease-in-out;
@@ -750,9 +750,19 @@ li{
   letter-spacing: normal;
   -webkit-text-size-adjust:none!important;
 }
-#thing2, #thing12, #thing3,#thing11, #thing5, #thing14, #thing21{
+#thing2, #thing12,#thing5, #thing14, #thing21{
   border: 1px solid aqua;
-  color:#eee;
+  color: transparent;
+  /* color:#eee; */
+  text-transform: none !important;
+  letter-spacing: normal;
+  -webkit-text-size-adjust:none!important;
+}
+
+
+ #thing3,  #thing11 {
+  border: 1px solid aqua;
+  color: transparent;
   text-transform: none !important;
   letter-spacing: normal;
   -webkit-text-size-adjust:none!important;
@@ -831,6 +841,11 @@ li{
 
 #emphasis3{
   font-size:15pt;
+  font-weight:400;
+}
+
+#emphasis4{
+  font-size:14pt;
   font-weight:400;
 }
 
@@ -1044,30 +1059,31 @@ border:tomato 5px inset;
     /* margin-left:10px; */
     /* margin-right:10px; */
   }
-  #top{
+  #top, #bottom{
     width:240px;
     height:60px;
     display:flex;
     flex-direction: row;
   }
 
-  .counter0{
+  /* .counter0{
     width:46px;
-    height:60px;
-    border-right:#00ffff inset 5px;
+    height:50px;
+    border-right:#00ffff inset 5px; */
     /* border-left:#00ffff inset 5px; */
-    font-size:22px;
+    /* font-size:22px;
     color:black;
     background-color: white;
     text-align: center;
     font-weight: bold;
     padding-top:10px;
-  }
-  .counter1, .counter2, .counter3{
+  } */
+  #counter0, #counter1, #counter2, #counter3, #counter4{
     width:46px;
-    height:60px;
+    height:55px;
     /* border-right:#00ffff inset 5px; */
     border-right:#00ffff inset 5px;
+    border-bottom:#00ffff inset 5px;
     font-size:22px;
     color:black;
     background-color: white;
@@ -1075,18 +1091,36 @@ border:tomato 5px inset;
     font-weight: bold;
     padding-top:10px;
   }
-
+/* 
   .counter4{
     width:46px;
-    height:60px;
+    height:50px; */
     /* border-right:#00ffff inset 5px; */
     /* border-right:#00ffff inset 5px; */
+    /* font-size:22px;
+    color:black;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    padding-top:10px;
+  } */
+
+  .teams0, .teams1, .teams2, .teams3, .teams4{
+    width:46px;
+    height:55px;
+    border-top:#00ffff inset 5px;
+    border-right:#00ffff inset 5px;
     font-size:22px;
     color:black;
     background-color: white;
     text-align: center;
     font-weight: bold;
     padding-top:10px;
+  }
+  #ball1, #ball2, #ball3, #ball4{
+    height:42px;
+    width:42px;
+    margin-top:-5px;
   }
 
 
