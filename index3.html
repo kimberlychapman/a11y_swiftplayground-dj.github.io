@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>A11Y Swift Playground March</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./style3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style3.css">
+  <link rel="stylesheet" href="ihover-gh-pages/dist/styles/main.css">
+  <link href="http://fonts.googleapis.com/css?family=Lustria|Lato:300,400,700,400italic" rel="stylesheet" type="text/css">
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+   <script type = "text/javascript"
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script> -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58400131-2', 'auto');
+    ga('send', 'pageview');
+
+  </script>     
+<script>
+  function remove(me) {
+  document.getElementById(me).outerHTML = ""
+  }
+</script>
+<!-- </head> -->
+
+
+<script>
+  $('.main-nav').on('click',function(){
+    $('ul').slideToggle(280);
+  });
+</script>
+
+
+</head>
+<!-- <script type="text/javascript" src="script.js"></script> -->
+<body>
+<!-- partial:index.partial.html -->
+  <section>
+    <audio id="minors" src="audio/minors_noise.mp3" type="audio/mp3"></audio>
+    <audio id="college" src="audio/college.mp3" type="audio/mp3"></audio>
+    <audio id="wap-clean" src="audio/wap-clean.m4a" type="audio/m4a"></audio>
+    <audio id="wap-explicit" src="audio/wap-explicit.m4a" type="audio/m4a"></audio>
+    <audio id="right-explicit" src="audio/right-explicit.m4a" type="audio/m4a"></audio>
+    <audio id="night-explicit" src="audio/night-explicit.m4a" type="audio/m4a"></audio>
+  </section>
+  <!-- <div id="speaker-boxes">
+    <p style="font-family: 'Montserrat', sans-serif; font-size:16pt; color:white;">Testing</p>
+  </div> -->
+  <div class="wrapper">
+    <div class="sidebar">
+        <div class="title">Offense</div>
+        <!-- <br><span style="text-transform:none;letter-spacing: normal;">func finishTournament( ) {</span> -->
+      <ul class="nav">
+        <li> 
+          <!-- <a id="function" onclick=writeTitle() ondblclick=writeFunction()>Command</a> -->
+          <a id="test" onclick=countLoops() ondblclick=totalLoops()>var winners=</a>
+          <a id="test0">[1,2,3,4,5,6,7,8,9,10</a>
+          <a id="test1">11,12,13,14,15,16]</a>
+          <a id="test2">var Int=0 Champion=4</a>
+          <a id="test3"><span style="font-weight:bold;">while</span></a>
+          <a id="test4">(currentRound &lt Champion)&nbsp<span id="emphasis2">{</span></a>
+          <a id="test10">for team in winners<span id="emphasis3">{</span></a>
+          <a id="test5">teamsPlay( )</a>
+          <a id="test6">if team !win &nbsp<span id="emphasis4"> {</span></a>
+          <a id="test7">winners.remove(team) &nbsp<span id="emphasis4"> }</span></a>
+          <a id="test8">else &nbsp<span id="emphasis4">{ &nbsp</span>winnersMoveOn( ) &nbsp<span id="emphasis4"> }</span></a>
+          <a id="test9">currentRound += 1 &nbsp<span id="emphasis3"> } &nbsp</span><span id="emphasis2"> }</span></a>
+            <!-- <a id="test4">(currentRound &lt Champion)&nbsp<span id="emphasis1">{</span></a> -->
+        </li>
+        <!-- <li>
+          <a class='active'>Milestones</a>
+        </li> -->
+      
+        <!-- <li>
+          <a>Previews</a>
+        </li>
+        <li>
+          <a>Assets</a>
+        </li>
+        <li>
+          <a>Settings</a>
+        </li>
+        <li>
+          <a>Logout</a>
+        </li> -->
+      </ul>
+    </div>
+    <div class="content content-is-open">
+      <span class='side-panel-toggle'>
+        <i class="fa fa-bars" style="color:white;"></i>
+      </span>
+      <!-- <h1>Flexbox Off Canvas Menu</h1>
+      <h2>Lightweight, simple, easy to use</h2>
+      <div class="well well-sm">
+
+        <p>Banh mi street art organic, bicycle rights synth YOLO Neutra. Try-hard cliche vegan mlkshk actually. Godard pour-over locavore tousled synth, try-hard Portland single-origin coffee church-key gluten-free 90's blog. Cliche blog tote bag, literally Banksy viral biodiesel Portland High Life. Marfa Neutra selvage, photo booth tilde whatever 8-bit pork belly irony post-ironic forage slow-carb. Pickled chia wayfarers, gentrify letterpress gastropub food truck seitan meditation trust fund cliche biodiesel sartorial. Tousled skateboard Thundercats, mumblecore jean shorts 90's flexitarian deep v gentrify.</p>
+
+        <p>Banh mi street art organic, bicycle rights synth YOLO Neutra. Try-hard cliche vegan mlkshk actually. Godard pour-over locavore tousled synth, try-hard Portland single-origin coffee church-key gluten-free 90's blog. Cliche blog tote bag, literally Banksy viral biodiesel Portland High Life. Marfa Neutra selvage, photo booth tilde whatever 8-bit pork belly irony post-ironic forage slow-carb. Pickled chia wayfarers, gentrify letterpress gastropub food truck seitan meditation trust fund cliche biodiesel sartorial. Tousled skateboard Thundercats, mumblecore jean shorts 90's flexitarian deep v gentrify.</p>
+      </div> -->
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <!-- normal -->
+      <div class="ih-item circle effect2 left_to_right"><a href="#">
+          <div class="img"><img src="img/back-blocked.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Running Back !Open</h3>
+            <p>The Quarterback handed the ball to a Running Back that was covered; the Running Back got tackled.</p>
+          </div></a></div>
+      <!-- end normal -->
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-sm-6">
+ 
+    <!-- normal -->
+    <div class="ih-item circle effect4 left_to_right"><a href="#">
+        <div class="img"><img src="img/interception.jpg" alt="img"></div>
+        <div class="info">
+          <h3>Wide Receiver !Open</h3>
+          <p>The Quarterback threw a pass to a Wide Receiver that was covered; the pass was intercepted.</p>
+        </div></a></div>
+    <!-- end normal -->
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+   
+      <!-- normal -->
+      <div class="ih-item circle effect16 left_to_right"><a href="#">
+          <div class="img"><img src="img/sack.jpg" alt="img"></div>
+          <div class="info">
+            <h3>Wide Receiver !Open && Running Back !Open</h3>
+            <p>The Quarterback got sacked.</p>
+          </div></a></div>
+      <!-- end normal -->
+    </div>
+    </div>
+
+  
+
+  <!-- <div class="image-hover">
+    <div class="img-wrap">
+    <img src="http://zeypo-design.com/ressources/img/laurent.jpg" />
+    </div>
+    <div class="img-shadow"></div>
+    <div class="hover"><p style="color:black; opacity:0;font-size:36pt; margin-bottom:-25px;">Not Minors></p><hr/></div>
+  </div>
+
+  <div class="image-hover2">
+    <div class="img-wrap2">
+    <img src="http://zeypo-design.com/ressources/img/laurent.jpg" />
+    </div>
+    <div class="img-shadow2"></div>
+    <div class="hover2"><p style="color:black; opacity:0;font-size:36pt; margin-bottom:-25px;">Not Minors</p><hr/></div>
+  </div>
+
+<div class="image-hover3">
+    <div class="img-wrap3">
+    <img src="http://zeypo-design.com/ressources/img/laurent.jpg" />
+    </div>
+    <div class="img-shadow3"></div>
+    <div class="hover3"><p style="color:black; opacity:0;font-size:36pt; margin-bottom:-25px;">Not Minors</p><hr/></div>
+  </div>
+
+  <div class="image-hover4">
+    <div class="img-wrap4">
+    <img src="http://zeypo-design.com/ressources/img/laurent.jpg" />
+    </div>
+    <div class="img-shadow4"></div>
+    <div class="hover4"><p style="color:black; opacity:0;font-size:36pt; margin-bottom:-25px;">Win!</p><hr/></div>
+  </div>  -->
+
+  <div class="wrap-up">
+    <div class="main-nav">Algorithm<span><img id="arrow-down"src="img/drop-down-arrow.png"/></span></div>
+    <ul id="list-items">
+        <!-- <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing1" ondblclick="remove(this.id)">var winners=[1,2,3,4,5,6,7,8,9,10,<br>11,12,13,14,15,16]</div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing2" ondblclick="remove(this.id)">var currentRound: Int=0 champion=4 <span id="emphasis"></span></div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing20" ondblclick="remove(this.id)">while (currentRound &lt champion) <span id="emphasis">{</span></div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing4" ondblclick="remove(this.id)">for team in winners<span id="emphasis"> {</span></div></li> -->
+          <!-- <li=><div class="thing" draggable="true" ondragstart="drag(event)" id="thing12" ondblclick="remove(this.id)">winners.remove(team)<span id="emphasis"> }</span></div></li> -->
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing3" ondblclick=coverPlay() onclick="showPlay()">func qbScramble( )&nbsp<span id="emphasis2"> {</span></div></li>
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing11" ondblclick="hideStuck()" onclick="showStuck()"><span id="emphasis6">if </span><span id="emphasis5">! </span>wideReceiverOpen &&<br> <span id="emphasis5">! </span>runningBackOpen &nbsp<span id="emphasis">{</span></div></li>
+
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing12" ondblclick="hidePocket()" onclick="showPocket()">leavePocket ( )</div></li>
+
+        
+        <!-- <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing17" ondblclick="coverOpen()" onclick="showOpen()">if foundOpening &nbsp<span id="emphasis3">{</span></div></li> -->
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing5"ondblclick="coverOpen()" onclick="showOpen()">if foundOpening<span id="emphasis3"> {</span></div></li> 
+        <!-- <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing14" ondblclick="hideBack()" onclick="showBack()">else if !wideReceiverOpen && runningBackOpen || &nbsp<span id="emphasis3">{</span></div></li> -->
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing21" ondblclick="hideGain()" onclick="showGain()">runGainYards &nbsp<span id="emphasis3">}</span></div></li>
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing17"ondblclick="coverBounds()" onclick="showBounds()"><span id="emphasis6">else </span><span id="emphasis3"> {</span>runOutOfBounds <span id="emphasis3"> }</span></div></li> 
+          <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing24"ondblclick="coverBrackets()" onclick="showBrackets()">&nbsp &nbsp <span id="emphasis">}<span id="emphasis2"> }</span</div></li> 
+        <!-- <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing6" oncontextmenu="showCode1()" ondblclick="remove(this.id)">getsongRequest( )</div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing7" oncontextmenu="showCode2()" ondblclick="remove(this.id)">if &nbsp!oldEnough <span id="emphasis">{</span></div></li>
+        <li=><div class="thing" draggable="true" ondragstart="drag(event)" id="thing8" oncontextmenu="showCode3()" ondblclick="remove(this.id)">playclean( )<span id="emphasis"> }</span></div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing9" oncontextmenu="showCode4()" ondblclick="remove(this.id)">else if oldEnough<span id="emphasis"> {</span></div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing10" oncontextmenu="showCode5()" ondblclick="remove(this.id)">playClean( )<span id="emphasis"> } &nbsp}</span></div></li> -->
+        <!-- <a id="two" href="#">Code</a></li> -->
+      <!-- <li id="one"><a id="two" href="#">Code</a></li>
+      <li id="one"><a id="two" href="#">Code</a></li>
+      <li id="one"><a id="two" href="#">Code</a></li>
+      <li id="one"><a id="two" href="#">Code</a></li> -->
+    </ul>
+  </div>
+  
+  <div class="drop-box" id="drop-box31">
+    <a href= "index2.html"><img id="rewind" src="img/rewind.png"></a>
+  </div>
+  <!-- <div class="drop-box" id="drop-box1" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+  <!-- <div id="drop-boxes">
+    <div class="drop-box" id="drop-box3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="drop-box" id="drop-box4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="drop-box" id="drop-box5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="drop-box" id="drop-box6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="drop-box" id="drop-box11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="drop-box" id="drop-box21" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+    <!-- <div class="drop-box" id="drop-box12" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+    <!-- <div class="drop-box" id="drop-box13" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+    <!-- <div class="drop-box" id="drop-box14" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+    <!-- <div class="drop-box" id="drop-box7" onclick="showCounter()" ondblclick="hideCounter()">var winners=[1,2,3,4,5,6,7,8,9,10,11,12,<br>13,14,15,16]</div>
+    <div class="drop-box" id="drop-box8">var currentRound:<br>Int=0 &nbsp Champion=4</div>
+    <div class="drop-box" id="drop-box9">while (currentRound &lt Champion)&nbsp<span id="emphasis2">{</span></div>
+    <div class="drop-box" id="drop-box10">for team in winners&nbsp <span id="emphasis">{</span></div>
+    <div class="drop-box" id="drop-box23">
+        <div id="top">
+          <div id="counter0">0</div>
+          <div id="counter1" onclick="roundOne()" ondblclick="hideRoundOne()">+=1</div>
+          <div id="counter2" onclick="roundTwo()" ondblclick="hideRoundTwo()">+=1 </div>
+          <div id="counter3" onclick="roundThree()" ondblclick="hideRoundThree()">+=1</div>
+          <div id="counter4" onclick="roundFour()" ondblclick="hideRoundFour()">W</div>
+        </div>
+        <div id="bottom">
+          <div class="teams0">16</div>
+          <div class="teams1">
+            <img id="ball1" src='img/bball.jpeg'>
+          </div>
+          <div class="teams2">
+            <img id="ball2" src='img/bball.jpeg'>
+          </div>
+          <div class="teams3">
+            <img id="ball3" src='img/bball.jpeg'>
+          </div>
+          <div class="teams4">
+            <img id="ball4" src='img/bball.jpeg'>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+      <!-- <img id="speaker3" src="img/spotify-play.png" onclick="playTrack3()" ondblclick="endTrack3()">
+    </div>
+    <div class="drop-box" id="drop-box10">
+      <img id="speaker4" src="img/spotify-play.png" onclick="playTrack4()" ondblclick="endTrack4()">
+    </div>  -->
+      <!-- <div id="song-box1"> -->
+        <!-- <img id="play-button" src="img/spotify-play.png"> -->
+      <!-- </div> -->
+      <!-- <div id="song-box2"> -->
+        <!-- <img id="play-button" src="img/spotify-play.png"> -->
+      <!-- </div> -->
+      <!-- <div id="song-box3"> -->
+        <!-- <img id="play-button" src="img/spotify-play.png"> -->
+      <!-- </div> -->
+      <!-- <div id="song-box4"> -->
+        <!-- <img id="play-button" src="img/spotify-play.png"> -->
+      <!-- </div>
+
+  </div>
+  
+<div class="track-list">
+
+  </div> -->
+
+  <!-- <div class="col" id="col10">
+    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing8" ondblclick="remove(this.id)">if</div>
+    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing9" ondblclick="remove(this.id)">else if</div>
+    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing7" ondblclick="remove(this.id)"><img id="is-gem" src="img/red-gem.png">isOnGem{</div>
+    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing6" ondblclick="remove(this.id)"><img id="not-gem" src="img/not-gem.png">!isOnGem{</div>
+    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing1" ondblclick="remove(this.id)"><img id="move" src="img/moveForward().png">moveForward()</div>
+    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing10" ondblclick="remove(this.id)"><img id="turn" src="img/turnaround.png">turnAround()</div>
+    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing2" ondblclick="remove(this.id)"><img id="left" src="img/turnLeft().png">turnLeft()</div>
+    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing3" ondblclick="remove(this.id)"><img id="right" src="img/turnRight().png">turnRight()</div>
+    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing4" ondblclick="remove(this.id)"><img id="get-gem" src="img/the-gem.png">collectGem()</div>
+    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing11" ondblclick="remove(this.id)"><img id="move-loop" src="img/move-loop.png">Loop</div>
+  <div class="thing" draggable="true" ondragstart="drag(event)" id="thing5" ondblclick="remove(this.id)">toggleSwitch()</div> -->
+  <!-- </div>  -->
+
+  <!-- partial -->
+  <script src="ihover-gh-pages/dist/scripts/app.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script type = "text/javascript"
+        src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script  src="./script3.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  
+</body>
+</html>
