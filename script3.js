@@ -42,20 +42,23 @@ $(document).ready(function() {
       document.getElementById('test').style.borderTop="solid #eee 2px";
 
       document.getElementById('test0').style.color="white";
-      document.getElementById('test0').style.borderBottom="solid 2px transparent";
-      document.getElementById('test0').style.borderBottom="solid transparent 2px";
+      document.getElementById('test0').style.borderBottom="solid 2px #eee";
+      // document.getElementById('test0').style.borderBottom="solid transparent 2px";
 
-      document.getElementById('test1').style.color="white";
+      // document.getElementById('test1').style.color="white";
  
-      document.getElementById('test2').style.color="#eee";
-      document.getElementById('test2').style.borderBottom="solid #eee 2px";
+      // document.getElementById('test2').style.color="#eee";
+      // document.getElementById('test2').style.borderBottom="solid #eee 2px";
 
     //   document.getElementById('test3').style.borderTop="solid #eee 2px";
       document.getElementById('test3').style.color="#eee";
+      document.getElementById('test3').style.borderBottom="solid transparent 2px"; 
 
       document.getElementById('test4').style.color="#eee";
+      document.getElementById('test4').style.borderBottom="solid transparent 2px"; 
 
       document.getElementById('test10').style.color="#eee";
+      document.getElementById('test10').style.borderBottom="solid transparent 2px";
     //   document.getElementById('test4').style.borderBottom="solid #eee 2px";
 
       document.getElementById('test5').style.color="white";
@@ -71,7 +74,7 @@ $(document).ready(function() {
       document.getElementById('test8').style.borderBottom="solid transparent 2px";
 
       document.getElementById('test9').style.color="white";
-      document.getElementById('test9').style.borderBottom="solid transparent 2px";
+      document.getElementById('test9').style.borderBottom="solid #eee 2px";
   }
   
   function totalLoops(){
@@ -87,14 +90,14 @@ $(document).ready(function() {
       document.getElementById('test0').style.fontWeight="normal";
       document.getElementById('test0').style.borderTop="transparent";
 
-      document.getElementById('test1').style.color="transparent";
-      document.getElementById('test1').style.borderBottom="solid #222 1px";
-      document.getElementById('test1').style.fontWeight="normal";
-      document.getElementById('test1').style.borderTop="transparent";
+      // document.getElementById('test1').style.color="transparent";
+      // document.getElementById('test1').style.borderBottom="solid #222 1px";
+      // document.getElementById('test1').style.fontWeight="normal";
+      // document.getElementById('test1').style.borderTop="transparent";
 
-      document.getElementById('test2').style.color="transparent";
-      document.getElementById('test2').style.borderBottom="solid #222 2px";
-      document.getElementById('test2').style.fontWeight="normal";
+      // document.getElementById('test2').style.color="transparent";
+      // document.getElementById('test2').style.borderBottom="solid #222 2px";
+      // document.getElementById('test2').style.fontWeight="normal";
 
       document.getElementById('test3').style.borderTop="transparent";
       document.getElementById('test3').style.borderBottom="solid #222 2px";

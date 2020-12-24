@@ -60,18 +60,18 @@
       <ul class="nav">
         <li> 
           <!-- <a id="function" onclick=writeTitle() ondblclick=writeFunction()>Command</a> -->
-          <a id="test" onclick=countLoops() ondblclick=totalLoops()>var winners=</a>
-          <a id="test0">[1,2,3,4,5,6,7,8,9,10</a>
-          <a id="test1">11,12,13,14,15,16]</a>
-          <a id="test2">var Int=0 Champion=4</a>
-          <a id="test3"><span style="font-weight:bold;">while</span></a>
-          <a id="test4">(currentRound &lt Champion)&nbsp<span id="emphasis2">{</span></a>
-          <a id="test10">for team in winners<span id="emphasis3">{</span></a>
-          <a id="test5">teamsPlay( )</a>
-          <a id="test6">if team !win &nbsp<span id="emphasis4"> {</span></a>
-          <a id="test7">winners.remove(team) &nbsp<span id="emphasis4"> }</span></a>
-          <a id="test8">else &nbsp<span id="emphasis4">{ &nbsp</span>winnersMoveOn( ) &nbsp<span id="emphasis4"> }</span></a>
-          <a id="test9">currentRound += 1 &nbsp<span id="emphasis3"> } &nbsp</span><span id="emphasis2"> }</span></a>
+          <a id="test" onclick=countLoops() ondblclick=totalLoops()>var down=1</a>
+          <a id="test0">let down &lt 5= true</a>
+          <!-- <a id="test1">While (true) <span id="emphasis2">{</span></a> -->
+          <!-- <a id="test2">var Int=0 Champion=4</a> -->
+          <a id="test3">While </span>(true) &nbsp<span id="emphasis2"> {</span></a>
+          <a id="test4">if receiverIsOpen &nbsp<span id="emphasis3"> {</span></a>
+          <a id="test10">throwPassToReceiver( ) &nbsp<span id="emphasis3"> }</span></a>
+          <a id="test5"> else if ! receiverIsOpen && runningBackIsOpen<span id="emphasis3"> {</span></a>
+          <a id="test6">handOffOrPassToBack( ) &nbsp<span id="emphasis3"> }</span></a>
+          <a id="test7">else if ! receiverOpen &&<br> ! runningBackOpen<span id="emphasis3"> &nbsp {</span></a>
+          <a id="test8">qbScramble( ) &nbsp <span id="emphasis3"> }</span></a>
+          <a id="test9">down +=1 &nbsp<span id="emphasis2"> }</span></a>
             <!-- <a id="test4">(currentRound &lt Champion)&nbsp<span id="emphasis1">{</span></a> -->
         </li>
         <!-- <li>
@@ -190,7 +190,7 @@
         <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing4" ondblclick="remove(this.id)">for team in winners<span id="emphasis"> {</span></div></li> -->
           <!-- <li=><div class="thing" draggable="true" ondragstart="drag(event)" id="thing12" ondblclick="remove(this.id)">winners.remove(team)<span id="emphasis"> }</span></div></li> -->
         <!-- <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing3" ondblclick=coverPlay() onclick="showPlay()">func qbScramble( )&nbsp<span id="emphasis2"> {</span></div></li> -->
-        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing11" ondblclick="hideStuck()" onclick="showStuck()"><span id="emphasis6">if </span><span id="emphasis5">! </span>wideReceiverOpen &&<br> <span id="emphasis5">! </span>runningBackOpen &nbsp<span id="emphasis">{</span></div></li>
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing11" ondblclick="hideStuck()" onclick="showStuck()"><span id="emphasis6">func qbScramble( ) &nbsp<span id="emphasis2">{</span><br><br></div></li>
 
         <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing12" ondblclick="hidePocket()" onclick="showPocket()">leavePocket ( )</div></li>
 
@@ -199,7 +199,7 @@
         <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing5"ondblclick="coverOpen()" onclick="showOpen()">if foundOpening<span id="emphasis3"> {</span></div></li> 
         <!-- <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing14" ondblclick="hideBack()" onclick="showBack()">else if !wideReceiverOpen && runningBackOpen || &nbsp<span id="emphasis3">{</span></div></li> -->
         <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing21" ondblclick="hideGain()" onclick="showGain()">runGainYards &nbsp<span id="emphasis3">}</span></div></li>
-        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing17"ondblclick="coverBounds()" onclick="showBounds()"><span id="emphasis6">else </span><span id="emphasis3"> {</span>runOutOfBounds <span id="emphasis3"> }</span><span id="emphasis"> }<span id="emphasis2"> }</span></div></li> 
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing17"ondblclick="coverBounds()" onclick="showBounds()"><span id="emphasis6">else </span><span id="emphasis3"> {</span>runOutOfBounds <span id="emphasis3"> }</span><span id="emphasis2"> }</span></div></li> 
           <!-- <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing24"ondblclick="coverBrackets()" onclick="showBrackets()">&nbsp &nbsp <span id="emphasis">}<span id="emphasis2"> }</span></div></li>  -->
         <!-- <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing6" oncontextmenu="showCode1()" ondblclick="remove(this.id)">getsongRequest( )</div></li>
         <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing7" oncontextmenu="showCode2()" ondblclick="remove(this.id)">if &nbsp!oldEnough <span id="emphasis">{</span></div></li>
