@@ -52,9 +52,9 @@
           <a id="test" onclick=countLoops() ondblclick=totalLoops()>var winners=</a>
           <a id="test0">[1,2,3,4,5,6,7,8,9,10</a>
           <a id="test1">11,12,13,14,15,16]</a>
-          <a id="test2">var Int=0 Champion=4</a>
+          <a id="test2">var Int=0 Winner=4</a>
           <a id="test3"><span style="font-weight:bold;">while</span></a>
-          <a id="test4">(currentRound &lt Champion)&nbsp<span id="emphasis2">{</span></a>
+          <a id="test4">(currentRound &lt Winner)&nbsp<span id="emphasis2">{</span></a>
           <a id="test10">for team in winners<span id="emphasis3">{</span></a>
           <a id="test5">teamsPlay( )</a>
           <a id="test6">if team !win &nbsp<span id="emphasis4"> {</span></a>
@@ -136,12 +136,12 @@
         <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing20" ondblclick="remove(this.id)">while (currentRound &lt champion) <span id="emphasis">{</span></div></li>
         <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing4" ondblclick="remove(this.id)">for team in winners<span id="emphasis"> {</span></div></li> -->
           <!-- <li=><div class="thing" draggable="true" ondragstart="drag(event)" id="thing12" ondblclick="remove(this.id)">winners.remove(team)<span id="emphasis"> }</span></div></li> -->
-        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing3" ondblclick="remove(this.id)" oncontextmenu="showPlay()">teamsPlay( )</div></li>
-        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing11" ondblclick="remove(this.id)" oncontextmenu="showWin()">if team !win<span id="emphasis"> {</span></div></li>
-        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing12" ondblclick="remove(this.id)" oncontextmenu="showRemoveTeam()">winners.remove(team)<span id="emphasis"> }</span></div></li>
-        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing5" ondblclick="remove(this.id)" oncontextmenu="showElseTeams()">else<span id="emphasis"> {</span></div></li>
-        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing14" ondblclick="remove(this.id)" oncontextmenu="showWinnersMove()">winnersMoveOn( )<span id="emphasis"> }</span></div></li>
-        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing21" ondblclick="remove(this.id)" oncontextmenu="showCurrentRound()">currentRound += 1<span id="emphasis"> } }</span></div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing3" oncontextmenu="remove(this.id)" onclick="showPlay()" ondblclick="hidePlay()">teamsPlay( )</div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing11" oncontextmenu="remove(this.id)" onclick="showWin()" ondblclick="hideWin()">if team !win<span id="emphasis"> {</span></div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing12" oncontextmenu="remove(this.id)" onclick="showRemoveTeam()" ondblclick="hideRemoveTeam()">winners.remove(team)<span id="emphasis"> }</span></div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing5" oncontextmenu="remove(this.id)" onclick="showElseTeams()" ondblclick="hideElseTeam()">else<span id="emphasis"> {</span></div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing14" oncontextmenu="remove(this.id)" onclick="showWinnersMove()" ondblclick="hideWinnersMove()">winnersMoveOn( )<span id="emphasis"> }</span></div></li>
+        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing21" oncontextmenu="remove(this.id)" onclick="showCurrentRound()" ondblclick="hideCurrentRound()">currentRound += 1<span id="emphasis"> } }</span></div></li>
 
         <!-- <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing6" oncontextmenu="showCode1()" ondblclick="remove(this.id)">getsongRequest( )</div></li>
         <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing7" oncontextmenu="showCode2()" ondblclick="remove(this.id)">if &nbsp!oldEnough <span id="emphasis">{</span></div></li>
@@ -168,16 +168,16 @@
     <!-- <div class="drop-box" id="drop-box13" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
     <!-- <div class="drop-box" id="drop-box14" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
     <div class="drop-box" id="drop-box7" onclick="showCounter()" ondblclick="hideCounter()">var winners=[1,2,3,4,5,6,7,8,9,10,11,12,<br>13,14,15,16]</div>
-    <div class="drop-box" id="drop-box8">var currentRound:<br>Int=0 &nbsp Champion=4</div>
-    <div class="drop-box" id="drop-box9">while (currentRound &lt Champion)&nbsp<span id="emphasis2">{</span></div>
+    <div class="drop-box" id="drop-box8">var currentRound:<br>Int=0 &nbsp Winner=4</div>
+    <div class="drop-box" id="drop-box9">while (currentRound &lt Winner)&nbsp<span id="emphasis2">{</span></div>
     <div class="drop-box" id="drop-box10">for team in winners&nbsp <span id="emphasis">{</span></div>
     <div class="drop-box" id="drop-box23">
         <div id="top">
-          <div id="counter0">0</div>
-          <div id="counter1" onclick="roundOne()" ondblclick="hideRoundOne()">+=1</div>
-          <div id="counter2" onclick="roundTwo()" ondblclick="hideRoundTwo()">+=1 </div>
-          <div id="counter3" onclick="roundThree()" ondblclick="hideRoundThree()">+=1</div>
-          <div id="counter4" onclick="roundFour()" ondblclick="hideRoundFour()">W</div>
+          <div id="counter0" onclick="showZero()" ondblclick="hideZero()">0<br>+=1</div>
+          <div id="counter1" onclick="roundOne()" ondblclick="hideRoundOne()">1<br>+=1</div>
+          <div id="counter2" onclick="roundTwo()" ondblclick="hideRoundTwo()">2<br>+=1</div>
+          <div id="counter3" onclick="roundThree()" ondblclick="hideRoundThree()">3<br>+=1</div>
+          <div id="counter4" onclick="roundFour()" ondblclick="hideRoundFour()">W<br></div>
         </div>
         <div id="bottom">
           <div class="teams0">16</div>

@@ -768,7 +768,7 @@ li{
   -webkit-text-size-adjust:none!important;
 }
 #thing12, #thing3,  #thing11, #thing5, #thing14, #thing21{
-  border-image-source: linear-gradient(to bottom, #1E90FF 0%, #99FF99 100%);
+  border-image-source: linear-gradient(to bottom, tomato 0%, #00ffff 100%);
   border-image-slice: 5;
   border-width: 5px;
   text-transform: none !important;
@@ -992,6 +992,7 @@ border:tomato 5px inset;
   font-size:15px;
   /* margin-left:10px; */
   margin-right:10px;
+  border:solid lime 2px;
   /* border-image-source: linear-gradient(to bottom,#FF6347 0%, #00BFFF 100%);
   border-image-slice: 5; */
 
@@ -1001,6 +1002,7 @@ border:tomato 5px inset;
   top:88%;
   left:51.5%;
   font-size:15px;
+  border:solid lime 2px;
   /* margin-left:10px; */
   margin-right:10px;
 }
@@ -1010,6 +1012,7 @@ border:tomato 5px inset;
   left:17%;
   font-size:15px;
   margin-right:10px;
+  border:solid lime 2px;
 }
 #drop-box5{
   position:absolute;
@@ -1017,6 +1020,7 @@ border:tomato 5px inset;
   left:28.5%;
   font-size:15px;
   margin-right:10px;
+  border:solid lime 2px;
   /* margin-left:10px; */
 }
 #drop-box6{
@@ -1026,6 +1030,7 @@ border:tomato 5px inset;
   font-size:15px;
   /* margin-left:10px; */
   margin-right:10px;
+  border:solid lime 2px;
 }
 
 #drop-box11{
@@ -1035,16 +1040,25 @@ border:tomato 5px inset;
   font-size:15px;
   /* margin-left:10px; */
   margin-right:10px;
+  border:solid lime 2px;
 }
 
 #drop-box21{
-    position:absolute;
-    top:88%;
-    left:74.5%;
-    font-size:15px;
-    /* margin-left:10px; */
-    margin-right:10px;
-  }
+  position:absolute;
+  top:88%;
+  left:74.5%;
+  font-size:15px;
+  /* margin-left:10px; */
+  margin-right:10px;
+  border:solid lime 2px;
+}
+#drop-box3, #drop-box4, #drop-box5, #drop-box6, #drop-box11, #drop-box21{
+  border-image-source: linear-gradient(to bottom, tomato 0%, #00ffff 100%);
+  border-image-slice: 5;
+  border-width:5px;
+}
+
+
 
   #drop-box23{
     position:absolute;
@@ -1059,7 +1073,14 @@ border:tomato 5px inset;
     /* margin-left:10px; */
     /* margin-right:10px; */
   }
-  #top, #bottom{
+  #top{
+    width:240px;
+    height:100px;
+    display:flex;
+    flex-direction: row;
+  }
+ 
+  #bottom{
     width:240px;
     height:60px;
     display:flex;
@@ -1080,12 +1101,12 @@ border:tomato 5px inset;
   } */
   #counter0, #counter1, #counter2, #counter3, #counter4{
     width:46px;
-    height:55px;
+    height:80px;
     /* border-right:#00ffff inset 5px; */
     border-right:#00ffff inset 5px;
     border-bottom:#00ffff inset 5px;
     font-size:22px;
-    color:black;
+    color:transparent;
     background-color: white;
     text-align: center;
     font-weight: bold;

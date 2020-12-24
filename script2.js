@@ -377,43 +377,51 @@ $(document).ready(function() {
     document.getElementById('drop-box10').style.color="transparent";
     }
 
+    function showZero(){
+    document.getElementById('counter0').style.color="black";
+    }
+
+    function hideZero(){
+    document.getElementById('counter0').style.color="transparent";
+    }
+
     function roundOne(){
-    document.getElementById('counter1').innerHTML="1";
+    document.getElementById('counter1').style.color="black";
     document.getElementById('ball1').src="img/eight.png";
     }
 
     function hideRoundOne(){
-    document.getElementById('counter1').innerHTML="+=1";
+    document.getElementById('counter1').style.color="transparent";
     document.getElementById('ball1').src="img/bball.jpeg";
     }
 
     function roundTwo(){
-    document.getElementById('counter2').innerHTML="2";
+    document.getElementById('counter2').style.color="black";
     document.getElementById('ball2').src="img/four.png";
     }
 
     function hideRoundTwo(){
-    document.getElementById('counter2').innerHTML="+=1";
+    document.getElementById('counter2').style.color="transparent";
     document.getElementById('ball2').src="img/bball.jpeg";
     }
 
     function roundThree(){
-    document.getElementById('counter3').innerHTML="3";
+    document.getElementById('counter3').style.color="black";
     document.getElementById('ball3').src="img/two.png";
     }
 
     function hideRoundThree(){
-    document.getElementById('counter3').innerHTML="+=1";
+    document.getElementById('counter3').style.color="transparent";
     document.getElementById('ball3').src="img/bball.jpeg";
     }
 
     function roundFour(){
-    // document.getElementById('counter3').innerHTML="3";
+    document.getElementById('counter4').style.color="black";
     document.getElementById('ball4').src="img/one.png";
     }
 
     function hideRoundFour(){
-    // document.getElementById('counter3').innerHTML="+=1";
+    document.getElementById('counter4').style.color="transparent";
     document.getElementById('ball4').src="img/bball.jpeg";
     }
 
@@ -421,23 +429,47 @@ $(document).ready(function() {
         document.getElementById('thing3').style.color="#eee";
     }
 
+    function hidePlay(){
+        document.getElementById('thing3').style.color="transparent";
+    }
+
     function showWin(){
         document.getElementById('thing11').style.color="#eee";
+    }
+
+    function hideWin(){
+        document.getElementById('thing11').style.color="transparent";
     }
 
     function showRemoveTeam(){
         document.getElementById('thing12').style.color="#eee";
     }
 
+    function hideRemoveTeam(){
+        document.getElementById('thing12').style.color="transparent";
+    }
+
     function showElseTeams(){
         document.getElementById('thing5').style.color="#eee";
+    }
+
+    function hideElseTeam(){
+        document.getElementById('thing5').style.color="transparent";
     }
 
     function showWinnersMove(){
         document.getElementById('thing14').style.color="#eee";
     }
 
+    function hideWinnersMove(){
+        document.getElementById('thing14').style.color="transparent";
+    }
+
     function showCurrentRound(){
         document.getElementById('thing21').style.color="#eee";
+    }
+
+    function hideCurrentRound(){
+        document.getElementById('thing21').style.color="transparent";
     }
   // 

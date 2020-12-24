@@ -130,7 +130,11 @@ $(document).ready(function() {
       document.getElementById('test9').style.color="transparent";
     //   document.get1px solid #222;
   }
-  
+// 
+  function showFunction(){
+      document.getElementById("title2").style.display = "block";
+
+  }
   function runTest(){
     //   document.getElementById('test1').innerHTML="if &nbsp !minors {";
     //   document.getElementById('test1').style.color="aqua";

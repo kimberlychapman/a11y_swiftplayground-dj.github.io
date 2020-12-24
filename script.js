@@ -37,9 +37,9 @@ function drop(ev) {
 // }
 function countLoops(){
     document.getElementById('test').innerHTML="for i in 1 ... 4 {";
-    document.getElementById('test').style.color="white";
-    document.getElementById('test').style.borderBottom="solid white 2px";
-    document.getElementById('test').style.borderTop="solid white 2px";
+    document.getElementById('test').style.color="#eee";
+    document.getElementById('test').style.borderBottom="solid #eee 2px";
+    document.getElementById('test').style.borderTop="solid #eee 2px";
     document.getElementById('test').style.fontWeight="bold";
     // document.getElementById('test').style.backgroundColor="black";
 }
@@ -47,7 +47,7 @@ function countLoops(){
 function totalLoops(){
     document.getElementById('test').innerHTML="Queue";
     // document.getElementById('test').style.backgroundColor="#333";
-    document.getElementById('test').style.color="eee";
+    document.getElementById('test').style.color="transparent";
     document.getElementById('test').style.borderBottom="solid #222 1px";
     document.getElementById('test').style.fontWeight="normal";
     document.getElementById('test').style.borderTop="transparent";
@@ -56,16 +56,16 @@ function totalLoops(){
 
 function runTest(){
     document.getElementById('test1').innerHTML="if !oldEnough {";
-    document.getElementById('test1').style.color="aqua";
-    document.getElementById('test1').style.borderBottom="solid aqua 2px";
-    document.getElementById('test1').style.borderTop="solid aqua 2px";
+    document.getElementById('test1').style.color="#eee";
+    document.getElementById('test1').style.borderBottom="solid #eee 2px";
+    document.getElementById('test1').style.borderTop="solid #eee 2px";
     document.getElementById('test1').style.fontWeight="bold";
     // document.getElementById('test1').style.backgroundColor="black";
 }
 function endTest(){
     document.getElementById('test1').innerHTML="Queue";
     // document.getElementById('test1').style.backgroundColor="#333";
-    document.getElementById('test1').style.color="#eee";
+    document.getElementById('test1').style.color="transparent";
     document.getElementById('test1').style.borderBottom="solid #222 1px";
     document.getElementById('test1').style.fontWeight="normal";
     document.getElementById('test1').style.borderTop="transparent";
@@ -73,9 +73,9 @@ function endTest(){
 
 function getTrack(){
     document.getElementById('test0').innerHTML= "getSongRequest( )" ;
-    document.getElementById('test0').style.color="lime";
-    document.getElementById('test0').style.borderBottom="solid lime 2px";
-    document.getElementById('test0').style.borderTop="solid lime 2px";
+    document.getElementById('test0').style.color="#eee";
+    document.getElementById('test0').style.borderBottom="solid #eee 2px";
+    document.getElementById('test0').style.borderTop="solid #eee 2px";
     document.getElementById('test0').style.fontWeight="bold";
     // document.getElementById('test0').style.backgroundColor="black";   
 }
@@ -83,7 +83,7 @@ function getTrack(){
 function stopTrack(){
     document.getElementById('test0').innerHTML="Queue";
     // document.getElementById('test0').style.backgroundColor="#333";
-    document.getElementById('test0').style.color="#eee";
+    document.getElementById('test0').style.color="transparent";
     document.getElementById('test0').style.borderBottom="solid #222 1px";
     document.getElementById('test0').style.fontWeight="normal";
     document.getElementById('test0').style.borderTop="transparent";
@@ -91,9 +91,9 @@ function stopTrack(){
 
 function playExplicit(){
     document.getElementById('test2').innerHTML="playExplicit( ) } }";
-    document.getElementById('test2').style.color="red";
-    document.getElementById('test2').style.borderBottom="solid red 2px";
-    document.getElementById('test2').style.borderTop="solid red 2px";
+    document.getElementById('test2').style.color="#eee";
+    document.getElementById('test2').style.borderBottom="solid #eee 2px";
+    document.getElementById('test2').style.borderTop="solid #eee 2px";
     document.getElementById('test2').style.fontWeight="bold";
     // document.getElementById('test2').style.backgroundColor="black";   
 }
@@ -101,7 +101,7 @@ function playExplicit(){
 function stopExplicit(){
     document.getElementById('test2').innerHTML="Queue";
     // document.getElementById('test2').style.backgroundColor="#333";
-    document.getElementById('test2').style.color="#eee";
+    document.getElementById('test2').style.color="transparent";
     document.getElementById('test2').style.borderBottom="solid #222 1px";
     document.getElementById('test2').style.fontWeight="normal";
     document.getElementById('test2').style.borderTop="transparent";
@@ -109,9 +109,9 @@ function stopExplicit(){
 
 function elseTrack(){
     document.getElementById('test3').innerHTML="else if oldEnough {";
-    document.getElementById('test3').style.color="yellow";
-    document.getElementById('test3').style.borderBottom="solid yellow 2px";
-    document.getElementById('test3').style.borderTop="solid yellow 2px";
+    document.getElementById('test3').style.color="#eee";
+    document.getElementById('test3').style.borderBottom="solid #eee 2px";
+    document.getElementById('test3').style.borderTop="solid #eee 2px";
     document.getElementById('test3').style.fontWeight="bold";
     // document.getElementById('test3').style.backgroundColor="black";   
 }
@@ -119,7 +119,7 @@ function elseTrack(){
 function elsePlay(){
     document.getElementById('test3').innerHTML="Queue";
     // document.getElementById('test3').style.backgroundColor="#333";
-    document.getElementById('test3').style.color="#eee";
+    document.getElementById('test3').style.color="transparent";
     document.getElementById('test3').style.borderBottom="solid #222 1px";
     document.getElementById('test3').style.fontWeight="normal";
     document.getElementById('test3').style.borderTop="transparent";
@@ -127,9 +127,9 @@ function elsePlay(){
 
 function playClean(){
     document.getElementById('test4').innerHTML="playClean( ) }&nbsp";
-    document.getElementById('test4').style.color="magenta";
-    document.getElementById('test4').style.borderBottom="solid magenta 2px";
-    document.getElementById('test4').style.borderTop="solid magenta 2px";
+    document.getElementById('test4').style.color="#eee";
+    document.getElementById('test4').style.borderBottom="solid #eee 2px";
+    document.getElementById('test4').style.borderTop="solid #eee 2px";
     document.getElementById('test4').style.fontWeight="bold";
     // document.getElementById('test4').style.backgroundColor="black";   
 }
@@ -137,7 +137,7 @@ function playClean(){
 function stopClean(){
     document.getElementById('test4').innerHTML="Queue";
     // document.getElementById('test4').style.backgroundColor="#333";
-    document.getElementById('test4').style.color="#eee";
+    document.getElementById('test4').style.color="transparent";
     document.getElementById('test4').style.borderBottom="solid #222 1px";
     document.getElementById('test4').style.fontWeight="normal";
     document.getElementById('test4').style.borderTop="transparent";
@@ -265,6 +265,46 @@ function endTrack4(){
     track4.pause();
     track4.currentTime = 0;
     document.getElementById('speaker4').src="img/spotify-play.png";
+}
+
+function showThing1(){
+    document.getElementById('thing1').style.color="#eee";
+}
+
+function hideThing1(){
+    document.getElementById('thing1').style.color="transparent";
+}
+
+function showThing2(){
+    document.getElementById('thing2').style.color="#eee";
+}
+
+function hideThing2(){
+    document.getElementById('thing2').style.color="transparent";
+}
+
+function showThing5(){
+    document.getElementById('thing5').style.color="#eee";
+}
+
+function hideThing5(){
+    document.getElementById('thing5').style.color="transparent";
+}
+
+function showThing4(){
+    document.getElementById('thing4').style.color="#eee";
+}
+
+function hideThing4(){
+    document.getElementById('thing4').style.color="transparent";
+}
+
+function showThing3(){
+    document.getElementById('thing3').style.color="#eee";
+}
+
+function hideThing3(){
+    document.getElementById('thing3').style.color="transparent";
 }
 
 // 
