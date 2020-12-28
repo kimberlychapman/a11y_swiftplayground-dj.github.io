@@ -3,21 +3,33 @@ $(document).ready(function() {
       $('.content').toggleClass('content-is-open');
     });
   });
-  
   function allowDrop(ev) {
-      ev.preventDefault();
+    ev.preventDefault();
   }
   
   function drag(ev) {
-      ev.dataTransfer.setData("text", ev.target.id);
+    ev.dataTransfer.setData("text", ev.target.id);
   }
+  
   function drop(ev) {
-      ev.preventDefault();
-      var data = ev.dataTransfer.getData("text");
-    var origThing = document.getElementById(data);
-    var newThing = origThing.cloneNode(true);
-      ev.target.appendChild(newThing);
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
   }
+  // function allowDrop(ev) {
+  //     ev.preventDefault();
+  // }
+  
+  // function drag(ev) {
+  //     ev.dataTransfer.setData("text", ev.target.id);
+  // }
+  // function drop(ev) {
+  //     ev.preventDefault();
+  //     var data = ev.dataTransfer.getData("text");
+  //   var origThing = document.getElementById(data);
+  //   var newThing = origThing.cloneNode(true);
+  //     ev.target.appendChild(newThing);
+  // }
   
   // function writeTitle(){
   //     document.getElementById('function').innerHTML="func";
@@ -35,6 +47,7 @@ $(document).ready(function() {
   //     document.getElementById('function').style.fontWeight="normal";
   //     document.getElementById('function').style.borderTop="transparent";
   // }
+
   function countLoops(){
     //   document.getElementById('test').innerHTML="for i in 1 ... 4 {";
       document.getElementById('test').style.color="white";
@@ -134,48 +147,6 @@ $(document).ready(function() {
     //   document.get1px solid #222;
   }
 // 
-
-function showAllCommands(){
-  document.getElementById('thing32').style.color="#eee";
-  document.getElementById('thing25').style.color="#eee";
-  document.getElementById('thing31').style.color="#eee";
-  document.getElementById('thing27').style.color="#eee";
-  document.getElementById('thing47').style.color="#eee";
-  document.getElementById('thing44').style.color="#eee";
-  document.getElementById('thing39').style.color="#eee";
-}
-
-function hideAllCommands(){
-  document.getElementById('thing32').style.color="transparent";
-  document.getElementById('thing25').style.color="transparent";
-  document.getElementById('thing31').style.color="transparent";
-  document.getElementById('thing27').style.color="transparent";
-  document.getElementById('thing47').style.color="transparent";
-  document.getElementById('thing44').style.color="transparent";
-  document.getElementById('thing39').style.color="transparent";
-}
-
-function showAlgorithm(){
-  document.getElementById('thing11').style.color="#eee";
-  document.getElementById('thing12').style.color="#eee";
-  document.getElementById('thing5').style.color="#eee";
-  document.getElementById('thing21').style.color="#eee";
-  document.getElementById('thing17').style.color="#eee";
-  // document.getElementById('thing44').style.color="#eee";
-  // document.getElementById('thing39').style.color="#eee";
-}
-
-function hideAlgorithm(){
-  document.getElementById('thing11').style.color="transparent";
-  document.getElementById('thing12').style.color="transparent";
-  document.getElementById('thing5').style.color="transparent";
-  document.getElementById('thing21').style.color="transparent";
-  document.getElementById('thing17').style.color="transparent";
-  // document.getElementById('thing44').style.color="transparent";
-  // document.getElementById('thing39').style.color="transparent";
-}
-
-
   function showFunction(){
       document.getElementById("title2").style.display = "block";
 
@@ -225,16 +196,7 @@ function hideSetUp(){
       document.getElementById('test0').style.fontWeight="normal";
       document.getElementById('test0').style.borderTop="transparent";
   }
-
-  function showWRPlay(){
-    document.getElementById('drop-box1').style.display="block";
-    document.getElementById('drop-box3').style.display="block";
-  }
   
-  function hideWRPlay(){
-    document.getElementById('drop-box1').style.display="none";
-    document.getElementById('drop-box3').style.display="none";
-  }
 //   function showInt(){
     //   document.getElementById('test2').innerHTML="playExplicit( ) }";
     //   document.getElementById('test2').style.color="#eee";
@@ -498,30 +460,30 @@ function hideSetUp(){
     //     document.getElementById('thing3').style.color="transparent";
     // }
 
-    // function showStuck(){
-    //     document.getElementById('thing11').style.color="#eee";
-    // }
+    function showStuck(){
+        document.getElementById('thing11').style.color="#eee";
+    }
 
-    // function hideStuck(){
-    //     document.getElementById('thing11').style.color="transparent";
-    // }
+    function hideStuck(){
+        document.getElementById('thing11').style.color="transparent";
+    }
 
-    // function showPocket(){
-    //     document.getElementById('thing12').style.color="#eee";
-    // }
+    function showPocket(){
+        document.getElementById('thing12').style.color="#eee";
+    }
 
-    // function hidePocket(){
-    //     document.getElementById('thing12').style.color="transparent";
-    // }
+    function hidePocket(){
+        document.getElementById('thing12').style.color="transparent";
+    }
 
 
-    // function showOpen(){
-    //     document.getElementById('thing5').style.color="#eee";
-    // }
+    function showOpen(){
+        document.getElementById('thing5').style.color="#eee";
+    }
 
-    // function coverOpen(){
-    //     document.getElementById('thing5').style.color="transparent";
-    // }
+    function coverOpen(){
+        document.getElementById('thing5').style.color="transparent";
+    }
 
     // function showBack(){
     //     document.getElementById('thing14').style.color="#eee";
@@ -531,76 +493,76 @@ function hideSetUp(){
     //     document.getElementById('thing14').style.color="transparent";
     // }
 
-    // function showGain(){
-    //     document.getElementById('thing21').style.color="#eee";
-    // }
+    function showGain(){
+        document.getElementById('thing21').style.color="#eee";
+    }
 
-    // function hideGain(){
-    //     document.getElementById('thing21').style.color="transparent";
-    // }
+    function hideGain(){
+        document.getElementById('thing21').style.color="transparent";
+    }
 
-    // function showBounds(){
-    //     document.getElementById('thing17').style.color="#eee";
-    // }
+    function showBounds(){
+        document.getElementById('thing17').style.color="#eee";
+    }
 
-    // function coverBounds(){
-    //     document.getElementById('thing17').style.color="transparent";
-    // }
+    function coverBounds(){
+        document.getElementById('thing17').style.color="transparent";
+    }
 
-  //   function showR(){
-  //     document.getElementById('thing32').style.color="#eee";
-  // }
+    function showR(){
+      document.getElementById('thing32').style.color="#eee";
+  }
 
-  //   function hideR(){
-  //     document.getElementById('thing32').style.color="transparent";
-  // }
-  //   function showThrowPass(){
-  //     document.getElementById('thing25').style.color="#eee";
-  // }
+    function hideR(){
+      document.getElementById('thing32').style.color="transparent";
+  }
+    function showThrowPass(){
+      document.getElementById('thing25').style.color="#eee";
+  }
 
-//     function hideThrowPass(){
-//       document.getElementById('thing25').style.color="transparent";
-//   }
+    function hideThrowPass(){
+      document.getElementById('thing25').style.color="transparent";
+  }
 
-//   function showElseHand(){
-//     document.getElementById('thing31').style.color="#eee";
-// }
+  function showElseHand(){
+    document.getElementById('thing31').style.color="#eee";
+}
 
-//   function hideElseHand(){
-//     document.getElementById('thing31').style.color="transparent";
-// }
+  function hideElseHand(){
+    document.getElementById('thing31').style.color="transparent";
+}
 
-// function showHandBack(){
-//   document.getElementById('thing27').style.color="#eee";
-// }
+function showHandBack(){
+  document.getElementById('thing27').style.color="#eee";
+}
 
-// function hideHandBack(){
-//   document.getElementById('thing27').style.color="transparent";
-// }
+function hideHandBack(){
+  document.getElementById('thing27').style.color="transparent";
+}
 
-// function showNot(){
-//   document.getElementById('thing47').style.color="#eee";
-// }
+function showNot(){
+  document.getElementById('thing47').style.color="#eee";
+}
 
-// function hideNot(){
-//   document.getElementById('thing47').style.color="transparent";
-// }
+function hideNot(){
+  document.getElementById('thing47').style.color="transparent";
+}
 
-// function showScramble(){
-//   document.getElementById('thing44').style.color="#eee";
-// }
+function showScramble(){
+  document.getElementById('thing44').style.color="#eee";
+}
 
-// function hideScramble(){
-//   document.getElementById('thing44').style.color="transparent";
-// }
+function hideScramble(){
+  document.getElementById('thing44').style.color="transparent";
+}
 
-// function showDown(){
-//   document.getElementById('thing39').style.color="#eee";
-// }
+function showDown(){
+  document.getElementById('thing39').style.color="#eee";
+}
 
-// function hideDown(){
-//   document.getElementById('thing39').style.color="transparent";
-// }
+function hideDown(){
+  document.getElementById('thing39').style.color="transparent";
+}
     // function showBrackets(){
     //     document.getElementById('thing24').style.color="#eee";
     // }

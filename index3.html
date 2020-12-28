@@ -113,7 +113,7 @@
       <div class="ih-item circle effect2 left_to_right"><a href="#">
           <div class="img"><img src="img/back-blocked.jpg" alt="img"></div>
           <div class="info">
-            <h3>Running Back !Open</h3>
+            <h3>Running Back NOT Open</h3>
             <p>The Quarterback handed the ball to a Running Back that was covered; the Running Back got tackled.</p>
           </div></a></div>
       <!-- end normal -->
@@ -126,7 +126,7 @@
     <div class="ih-item circle effect4 left_to_right"><a href="#">
         <div class="img"><img src="img/interception.jpg" alt="img"></div>
         <div class="info">
-          <h3>Wide Receiver !Open</h3>
+          <h3>Wide Receiver NOT Open</h3>
           <p>The Quarterback threw a pass to a Wide Receiver that was covered; the pass was intercepted.</p>
         </div></a></div>
     <!-- end normal -->
@@ -140,7 +140,7 @@
       <div class="ih-item circle effect16 left_to_right"><a href="#">
           <div class="img"><img src="img/sack.jpg" alt="img"></div>
           <div class="info">
-            <h3>Wide Receiver !Open && Running Back !Open</h3>
+            <h3>Wide Receiver NOT Open AND Running Back NOT Open</h3>
             <p>The Quarterback got sacked.</p>
           </div></a></div>
       <!-- end normal -->
@@ -180,46 +180,50 @@
     <div class="img-shadow4"></div>
     <div class="hover4"><p style="color:black; opacity:0;font-size:36pt; margin-bottom:-25px;">Win!</p><hr/></div>
   </div>  -->
-  <div id="title2">func qbScramble() <span id="emphasis2">{</span></div>
+
+  <div id="title2" onclick="showSetUp()" ondblclick="hideSetUp()"><span id="emphasis2">{</span></div>
+  <div id="set-up">var down=1<br><br>let down &lt 5= true<br><br>While(true)</div>
   <div class="wrap-up">
     <div class="main-nav" oncontextmenu="showFunction()">Algorithm<span><img id="arrow-down"src="img/drop-down-arrow.png"/></span></div>
     <ul id="list-items">
-        <!-- <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing1" ondblclick="remove(this.id)">var winners=[1,2,3,4,5,6,7,8,9,10,<br>11,12,13,14,15,16]</div></li>
-        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing2" ondblclick="remove(this.id)">var currentRound: Int=0 champion=4 <span id="emphasis"></span></div></li>
-        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing20" ondblclick="remove(this.id)">while (currentRound &lt champion) <span id="emphasis">{</span></div></li>
-        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing4" ondblclick="remove(this.id)">for team in winners<span id="emphasis"> {</span></div></li> -->
-          <!-- <li=><div class="thing" draggable="true" ondragstart="drag(event)" id="thing12" ondblclick="remove(this.id)">winners.remove(team)<span id="emphasis"> }</span></div></li> -->
-        <!-- <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing3" ondblclick=coverPlay() onclick="showPlay()">func qbScramble( )&nbsp<span id="emphasis2"> {</span></div></li> -->
-        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing11" ondblclick="hideStuck()" onclick="showStuck()"><span id="emphasis6">func qbScramble( ) &nbsp<span id="emphasis2">{</span><br><br></div></li>
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing11" onclick="showStuck()" ondblclick="remove(this.id)" ><span id="emphasis6">func qbScramble( ) &nbsp<span id="emphasis2">{</span><br><br></div></li>
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing12"  onclick="showPocket()" ondblclick="remove(this.id)">leavePocket ( )</div></li>
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing5" onclick="showOpen()" ondblclick="remove(this.id)">if foundOpening<span id="emphasis3"> {</span></div></li> 
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing21"  onclick="showGain()" ondblclick="remove(this.id)">runGainYards( ) &nbsp<span id="emphasis3">}</span></div></li>
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing17" onclick="showBounds()" ondblclick="remove(this.id)"><span id="emphasis6">else </span><span id="emphasis3"> {</span>runOutOfBounds( ) <span id="emphasis3"> }</span><span id="emphasis2"> }</span></div></li>
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing51" onclick="showAlgorithm()" ondblclick="hideAlgorithm()"></div></li>  
+    </ul>
+  </div>
 
-        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing12" ondblclick="hidePocket()" onclick="showPocket()">leavePocket ( )</div></li>
-
-        
-        <!-- <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing17" ondblclick="coverOpen()" onclick="showOpen()">if foundOpening &nbsp<span id="emphasis3">{</span></div></li> -->
-        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing5"ondblclick="coverOpen()" onclick="showOpen()">if foundOpening<span id="emphasis3"> {</span></div></li> 
-        <!-- <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing14" ondblclick="hideBack()" onclick="showBack()">else if !wideReceiverOpen && runningBackOpen || &nbsp<span id="emphasis3">{</span></div></li> -->
-        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing21" ondblclick="hideGain()" onclick="showGain()">runGainYards &nbsp<span id="emphasis3">}</span></div></li>
-        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing17"ondblclick="coverBounds()" onclick="showBounds()"><span id="emphasis6">else </span><span id="emphasis3"> {</span>runOutOfBounds <span id="emphasis3"> }</span><span id="emphasis2"> }</span></div></li> 
-          <!-- <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing24"ondblclick="coverBrackets()" onclick="showBrackets()">&nbsp &nbsp <span id="emphasis">}<span id="emphasis2"> }</span></div></li>  -->
-        <!-- <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing6" oncontextmenu="showCode1()" ondblclick="remove(this.id)">getsongRequest( )</div></li>
-        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing7" oncontextmenu="showCode2()" ondblclick="remove(this.id)">if &nbsp!oldEnough <span id="emphasis">{</span></div></li>
-        <li=><div class="thing" draggable="true" ondragstart="drag(event)" id="thing8" oncontextmenu="showCode3()" ondblclick="remove(this.id)">playclean( )<span id="emphasis"> }</span></div></li>
-        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing9" oncontextmenu="showCode4()" ondblclick="remove(this.id)">else if oldEnough<span id="emphasis"> {</span></div></li>
-        <li><div class="thing" draggable="true" ondragstart="drag(event)" id="thing10" oncontextmenu="showCode5()" ondblclick="remove(this.id)">playClean( )<span id="emphasis"> } &nbsp}</span></div></li> -->
-        <!-- <a id="two" href="#">Code</a></li> -->
-      <!-- <li id="one"><a id="two" href="#">Code</a></li>
-      <li id="one"><a id="two" href="#">Code</a></li>
-      <li id="one"><a id="two" href="#">Code</a></li>
-      <li id="one"><a id="two" href="#">Code</a></li> -->
+  <div class="wrap-up2">
+    <div class="main-nav2" oncontextmenu="showFunction()">Commands<span><img id="arrow-down"src="img/drop-down-arrow.png"/></span></div>
+    <ul id="list-items">
+        <!-- <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing11" ondblclick="hideStuck()" onclick="showStuck()"><span id="emphasis6">func qbScramble( ) &nbsp<span id="emphasis2">{</span><br><br></div></li> -->
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing32" onclick="showR()" ondblclick="remove(this.id)">if receiverIsOpen &nbsp<span id="emphasis3">{</span></div></li>
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing25" onclick="showThrowPass()" ondblclick="remove(this.id)">throwPassToReceiver( )<span id="emphasis3"> }</span></div></li> 
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing31" onclick="showElseHand()" ondblclick="remove(this.id)">else if ! receiverIsOpen && runningBackIsOpen &nbsp<span id="emphasis3">{</span></div></li>
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing27" onclick="showHandBack()" ondblclick="remove(this.id)">handOffOrPassToBack( )<span id="emphasis3"> }</span></div></li> 
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing47" onclick="showNot()" ondblclick="remove(this.id)">else if ! receiverIsOpen && <br>! runningBackIsOpen &nbsp<span id="emphasis3"> {</span></div></li> 
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing44" onclick="showScramble()" ondblclick="remove(this.id)">qbScramble( ) &nbsp<span id="emphasis3"> }</span></div></li> 
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing39" onclick="showDown()" ondblclick="remove(this.id)"> down +=1</div></li> 
+        <li id="across"><div class="thing" draggable="true" ondragstart="drag(event)" id="thing50" onclick="showAllCommands()" ondblclick="hideAllCommands()"></div></li> 
     </ul>
   </div>
   
-  <div class="drop-box" id="drop-box31">
-    <a href= "index2.html"><img id="rewind" src="img/rewind.png"></a>
+  
+    <a id="back" href= "index2.html"><img id="rewind" src="img/rewind.png"></a>
+    <a id="next" href= "index4.html"><img id="forward" src="img/fast-forward.png"></a>
   </div>
-  <!-- <div class="drop-box" id="drop-box1" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+  <div class="drop-box" id="drop-box1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class="drop-box" id="drop-box3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <!-- <div class="drop-box" id="drop-box4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class="drop-box" id="drop-box15" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class="drop-box" id="drop-box16" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class="drop-box" id="drop-box25" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class="drop-box" id="drop-box28" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+  <div id="wilson1" onclick="showWRPlay()" ondblclick="hideWRPlay()"><img class="wilson1" src="img/wilson.png"></div> 
   <!-- <div id="drop-boxes">
-    <div class="drop-box" id="drop-box3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
     <div class="drop-box" id="drop-box4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <div class="drop-box" id="drop-box5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <div class="drop-box" id="drop-box6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
